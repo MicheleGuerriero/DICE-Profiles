@@ -19,14 +19,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ProviderType implements Enumerator {
 	/**
-	 * The '<em><b>Flexiant</b></em>' literal object.
+	 * The '<em><b>Fco</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #FLEXIANT_VALUE
+	 * @see #FCO_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	FLEXIANT(0, "flexiant", "flexiant"),
+	FCO(0, "fco", "fco"),
 
 	/**
 	 * The '<em><b>Openstack</b></em>' literal object.
@@ -39,19 +39,19 @@ public enum ProviderType implements Enumerator {
 	OPENSTACK(1, "openstack", "openstack");
 
 	/**
-	 * The '<em><b>Flexiant</b></em>' literal value.
+	 * The '<em><b>Fco</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>Flexiant</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Fco</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @see #FLEXIANT
-	 * @model name="flexiant"
+	 * @see #FCO
+	 * @model name="fco"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int FLEXIANT_VALUE = 0;
+	public static final int FCO_VALUE = 0;
 
 	/**
 	 * The '<em><b>Openstack</b></em>' literal value.
@@ -76,7 +76,7 @@ public enum ProviderType implements Enumerator {
 	 */
 	private static final ProviderType[] VALUES_ARRAY =
 		new ProviderType[] {
-			FLEXIANT,
+			FCO,
 			OPENSTACK,
 		};
 
@@ -134,7 +134,7 @@ public enum ProviderType implements Enumerator {
 	 */
 	public static ProviderType get(int value) {
 		switch (value) {
-			case FLEXIANT_VALUE: return FLEXIANT;
+			case FCO_VALUE: return FCO;
 			case OPENSTACK_VALUE: return OPENSTACK;
 		}
 		return null;

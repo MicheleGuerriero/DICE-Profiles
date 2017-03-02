@@ -37,7 +37,7 @@ public enum StreamPolicy implements Enumerator {
 	 * @ordered
 	 */
 	SHUFFLE(1, "shuffle", "shuffle"),
-	
+
 	/**
 	 * The '<em><b>Field</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -57,7 +57,7 @@ public enum StreamPolicy implements Enumerator {
 	 * @ordered
 	 */
 	GLOBAL(3, "global", "global");
-	
+
 	/**
 	 * The '<em><b>All</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -87,7 +87,7 @@ public enum StreamPolicy implements Enumerator {
 	 * @ordered
 	 */
 	public static final int SHUFFLE_VALUE = 1;
-	
+
 	/**
 	 * The '<em><b>Field</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -102,8 +102,8 @@ public enum StreamPolicy implements Enumerator {
 	 * @ordered
 	 */
 	public static final int FIELD_VALUE = 2;
-	
-		/**
+
+	/**
 	 * The '<em><b>Global</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>

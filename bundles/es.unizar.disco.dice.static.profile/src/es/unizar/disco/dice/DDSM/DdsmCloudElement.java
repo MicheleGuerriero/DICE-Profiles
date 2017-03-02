@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmCloudElement#getDescription <em>Description</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmCloudElement#getPropertiesList <em>Properties List</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmCloudElement#getResourcesList <em>Resources List</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmCloudElement#getId <em>Id</em>}</li>
  * </ul>
  *
@@ -37,7 +36,7 @@ public interface DdsmCloudElement extends EObject {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmCloudElement_Description()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getDescription();
@@ -63,26 +62,10 @@ public interface DdsmCloudElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Properties List</em>' attribute list.
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmCloudElement_PropertiesList()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	EList<String> getPropertiesList();
-
-	/**
-	 * Returns the value of the '<em><b>Resources List</b></em>' reference list.
-	 * The list contents are of type {@link es.unizar.disco.dice.DDSM.DdsmResource}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resources List</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Resources List</em>' reference list.
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmCloudElement_ResourcesList()
-	 * @model ordered="false"
-	 * @generated
-	 */
-	EList<DdsmResource> getResourcesList();
 
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.
@@ -95,7 +78,7 @@ public interface DdsmCloudElement extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmCloudElement_Id()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getId();

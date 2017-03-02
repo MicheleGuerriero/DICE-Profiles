@@ -11,13 +11,13 @@
       </eAnnotations>
       <eClassifiers xsi:type="ecore:EClass" name="DiceDataVolume">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="volume" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DiceDataSpecification">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
             eType="ecore:EDataType ../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="refModel" ordered="false"
             eType="#//Basic_DICE_Types/Basic_Enumeration_Types/RefType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="refDataFormat" ordered="false"
@@ -25,9 +25,9 @@
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="DiceChannelSpecification">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_Frequency"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" ordered="false"
-            eType="ecore:EDataType ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
+            eType="ecore:EClass ../../org.eclipse.papyrus.marte.static.profile/resources/MARTE_Library.ecore#//BasicNFP_Types/NFP_DataSize"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
@@ -129,12 +129,12 @@
         <eLiterals name="fair" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="VMSize">
-        <eLiterals name="small"/>
-        <eLiterals name="medium" value="1"/>
-        <eLiterals name="large" value="2"/>
+        <eLiterals name="Small"/>
+        <eLiterals name="Medium" value="1"/>
+        <eLiterals name="Large" value="2"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="ProviderType">
-        <eLiterals name="flexiant"/>
+        <eLiterals name="fco"/>
         <eLiterals name="openstack" value="1"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EEnum" name="DDSMcomponentType">

@@ -3,24 +3,24 @@
 package es.unizar.disco.dice.DDSM.impl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
-import es.unizar.disco.dice.DDSM.DdsmKafka;
+import es.unizar.disco.dice.DDSM.DdsmHdfsCluster;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Ddsm Kafka</b></em>'.
+ * An implementation of the model object '<em><b>Ddsm Hdfs Cluster</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class DdsmKafkaImpl extends DdsmInternalComponentImpl implements DdsmKafka {
+public class DdsmHdfsClusterImpl extends DdsmMasterSlavePlatformImpl implements DdsmHdfsCluster {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DdsmKafkaImpl() {
+	protected DdsmHdfsClusterImpl() {
 		super();
 	}
 
@@ -31,7 +31,7 @@ public class DdsmKafkaImpl extends DdsmInternalComponentImpl implements DdsmKafk
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DDSMPackage.Literals.DDSM_KAFKA;
+		return DDSMPackage.Literals.DDSM_HDFS_CLUSTER;
 	}
 
-} //DdsmKafkaImpl
+} //DdsmHdfsClusterImpl

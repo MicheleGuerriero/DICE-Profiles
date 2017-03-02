@@ -16,6 +16,8 @@ import org.eclipse.uml2.uml.Deployment;
  * </p>
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getBase_Deployment <em>Base Deployment</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getNumberOfSubmission <em>Number Of Submission</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getIntervalBetweenSubmission <em>Interval Between Submission</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmJobSubmission()
@@ -48,5 +50,57 @@ public interface DdsmJobSubmission extends EObject {
 	 * @generated
 	 */
 	void setBase_Deployment(Deployment value);
+
+	/**
+	 * Returns the value of the '<em><b>Number Of Submission</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Number Of Submission</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Number Of Submission</em>' attribute.
+	 * @see #setNumberOfSubmission(int)
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmJobSubmission_NumberOfSubmission()
+	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @generated
+	 */
+	int getNumberOfSubmission();
+
+	/**
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getNumberOfSubmission <em>Number Of Submission</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Number Of Submission</em>' attribute.
+	 * @see #getNumberOfSubmission()
+	 * @generated
+	 */
+	void setNumberOfSubmission(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Interval Between Submission</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Interval Between Submission</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Interval Between Submission</em>' attribute.
+	 * @see #setIntervalBetweenSubmission(int)
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmJobSubmission_IntervalBetweenSubmission()
+	 * @model dataType="org.eclipse.uml2.types.Integer" ordered="false"
+	 * @generated
+	 */
+	int getIntervalBetweenSubmission();
+
+	/**
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getIntervalBetweenSubmission <em>Interval Between Submission</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Interval Between Submission</em>' attribute.
+	 * @see #getIntervalBetweenSubmission()
+	 * @generated
+	 */
+	void setIntervalBetweenSubmission(int value);
 
 } // DdsmJobSubmission

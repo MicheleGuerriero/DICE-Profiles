@@ -2,7 +2,7 @@
 <feature
       id="com.masdes.dam.profile.feature"
       label="DICE DAM Profile"
-      version="0.10.0.qualifier"
+      version="0.11.0.qualifier"
       provider-name="DisCo - Unizar">
 
    <description url="https://github.com/dice-project/DICE-Profiles">
@@ -236,7 +236,7 @@ any resulting litigation.
          id="com.masdes.dam.static.profile"
          download-size="0"
          install-size="0"
-         version="0.10.0.qualifier"
+         version="0.11.0.qualifier"
          unpack="false"/>
 
 </feature>

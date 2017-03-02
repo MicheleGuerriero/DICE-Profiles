@@ -31,15 +31,6 @@ public interface DDSMFactory extends EFactory {
 	DdsmExternalComponent createDdsmExternalComponent();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Resource</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Resource</em>'.
-	 * @generated
-	 */
-	DdsmResource createDdsmResource();
-
-	/**
 	 * Returns a new object of class '<em>Ddsm Port</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,76 +49,67 @@ public interface DDSMFactory extends EFactory {
 	DdsmInternalComponent createDdsmInternalComponent();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Cluster</em>'.
+	 * Returns a new object of class '<em>Ddsm Heterogeneous Cluster</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Cluster</em>'.
+	 * @return a new object of class '<em>Ddsm Heterogeneous Cluster</em>'.
 	 * @generated
 	 */
-	DdsmCluster createDdsmCluster();
+	DdsmHeterogeneousCluster createDdsmHeterogeneousCluster();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Vm</em>'.
+	 * Returns a new object of class '<em>Ddsm VMs Cluster</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Vm</em>'.
+	 * @return a new object of class '<em>Ddsm VMs Cluster</em>'.
 	 * @generated
 	 */
-	DdsmVm createDdsmVm();
+	DdsmVMsCluster createDdsmVMsCluster();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Yarn Resource Manager</em>'.
+	 * Returns a new object of class '<em>Ddsm Yarn Cluster</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Yarn Resource Manager</em>'.
+	 * @return a new object of class '<em>Ddsm Yarn Cluster</em>'.
 	 * @generated
 	 */
-	DdsmYarnResourceManager createDdsmYarnResourceManager();
+	DdsmYarnCluster createDdsmYarnCluster();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Zookeeper Server</em>'.
+	 * Returns a new object of class '<em>Ddsm Master Slave Platform</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Zookeeper Server</em>'.
+	 * @return a new object of class '<em>Ddsm Master Slave Platform</em>'.
 	 * @generated
 	 */
-	DdsmZookeeperServer createDdsmZookeeperServer();
+	DdsmMasterSlavePlatform createDdsmMasterSlavePlatform();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Kafka</em>'.
+	 * Returns a new object of class '<em>Ddsm Zookeeper Cluster</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Kafka</em>'.
+	 * @return a new object of class '<em>Ddsm Zookeeper Cluster</em>'.
 	 * @generated
 	 */
-	DdsmKafka createDdsmKafka();
+	DdsmZookeeperCluster createDdsmZookeeperCluster();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Nimbus</em>'.
+	 * Returns a new object of class '<em>Ddsm Peer To Peer Platform</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Nimbus</em>'.
+	 * @return a new object of class '<em>Ddsm Peer To Peer Platform</em>'.
 	 * @generated
 	 */
-	DdsmNimbus createDdsmNimbus();
+	DdsmPeerToPeerPlatform createDdsmPeerToPeerPlatform();
 
 	/**
-	 * Returns a new object of class '<em>Ddsm Job Submission</em>'.
+	 * Returns a new object of class '<em>Ddsm Kafka Cluster</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Job Submission</em>'.
+	 * @return a new object of class '<em>Ddsm Kafka Cluster</em>'.
 	 * @generated
 	 */
-	DdsmJobSubmission createDdsmJobSubmission();
-
-	/**
-	 * Returns a new object of class '<em>Ddsm Supervisor</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ddsm Supervisor</em>'.
-	 * @generated
-	 */
-	DdsmSupervisor createDdsmSupervisor();
+	DdsmKafkaCluster createDdsmKafkaCluster();
 
 	/**
 	 * Returns a new object of class '<em>Ddsm Storm Cluster</em>'.
@@ -137,6 +119,15 @@ public interface DDSMFactory extends EFactory {
 	 * @generated
 	 */
 	DdsmStormCluster createDdsmStormCluster();
+
+	/**
+	 * Returns a new object of class '<em>Ddsm Job Submission</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Job Submission</em>'.
+	 * @generated
+	 */
+	DdsmJobSubmission createDdsmJobSubmission();
 
 	/**
 	 * Returns a new object of class '<em>Ddsm Big Data Job</em>'.
@@ -155,6 +146,24 @@ public interface DDSMFactory extends EFactory {
 	 * @generated
 	 */
 	DdsmJobDeployedFrom createDdsmJobDeployedFrom();
+
+	/**
+	 * Returns a new object of class '<em>Ddsm Hdfs Cluster</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Hdfs Cluster</em>'.
+	 * @generated
+	 */
+	DdsmHdfsCluster createDdsmHdfsCluster();
+
+	/**
+	 * Returns a new object of class '<em>Ddsm Cassandra Cluster</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ddsm Cassandra Cluster</em>'.
+	 * @generated
+	 */
+	DdsmCassandraCluster createDdsmCassandraCluster();
 
 	/**
 	 * Returns the package supported by this factory.

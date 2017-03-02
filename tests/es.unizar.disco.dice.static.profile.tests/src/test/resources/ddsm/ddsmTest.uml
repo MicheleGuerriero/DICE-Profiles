@@ -27,6 +27,8 @@
       <packagedElement xmi:type="uml:Node" xmi:id="_LhhucJnMEeay_qekZgZgrw" name="Node2"/>
       <packagedElement xmi:type="uml:Node" xmi:id="_ToPW4JnMEeay_qekZgZgrw" name="Node3"/>
       <packagedElement xmi:type="uml:Node" xmi:id="_Z3u_AJnMEeay_qekZgZgrw" name="Node4"/>
+      <packagedElement xmi:type="uml:ExecutionEnvironment" xmi:id="_aU0nkP59EeaV6ZmU0FMtwA" name="ExecutionEnvironment1"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_RbhPIP5-EeaV6ZmU0FMtwA" name="Dependency" client="_vFgZwJnLEeay_qekZgZgrw" supplier="_ToPW4JnMEeay_qekZgZgrw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_PYGCQJnKEea8dteV6Gft2A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PYH3cJnKEea8dteV6Gft2A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -60,17 +62,16 @@
     </profileApplication>
   </uml:Model>
   <DDSM:DdsmPort xmi:id="_Q_zKcJnLEeay_qekZgZgrw" base_CommunicationPath="_t5H7oJnKEea8dteV6Gft2A"/>
-  <DDSM:DdsmVm xmi:id="_T15N0JnLEeay_qekZgZgrw" base_Device="_Xzv_8JnKEea8dteV6Gft2A"/>
-  <DDSM:DdsmVm xmi:id="_W7oPsJnLEeay_qekZgZgrw" base_Device="_Qjs5wJnKEea8dteV6Gft2A" instances="3"/>
-  <DDSM:DdsmResource xmi:id="_kEaD0JnLEeay_qekZgZgrw" base_Artifact="_co_QkJnKEea8dteV6Gft2A"/>
-  <DDSM:DdsmSupervisor xmi:id="_AB964JnMEeay_qekZgZgrw" base_Node="_YoBVgJnKEea8dteV6Gft2A"/>
   <DDSM:DdsmStormCluster xmi:id="_Dv6zUJnMEeay_qekZgZgrw" base_Node="_bHLfkJnKEea8dteV6Gft2A"/>
-  <DDSM:DdsmZookeeperServer xmi:id="_HcADgJnMEeay_qekZgZgrw" componentType="PeerNode" base_Node="_GgL7gJnMEeay_qekZgZgrw"/>
-  <DDSM:DdsmKafka xmi:id="_Myu3oJnMEeay_qekZgZgrw" base_Node="_LhhucJnMEeay_qekZgZgrw"/>
-  <DDSM:DdsmNimbus xmi:id="_QVudQJnMEeay_qekZgZgrw" componentType="MasterNode" base_Node="_vFgZwJnLEeay_qekZgZgrw"/>
-  <DDSM:DdsmYarnResourceManager xmi:id="_WFFz0JnMEeay_qekZgZgrw" componentType="MasterNode" base_Node="_ToPW4JnMEeay_qekZgZgrw"/>
   <DDSM:DdsmInternalComponent xmi:id="_efw6EJnMEeay_qekZgZgrw" componentType="CassandraSeed" base_Node="_Z3u_AJnMEeay_qekZgZgrw"/>
   <DPIM:DpimComputationNode xmi:id="_PAi0MJnmEeaqW8enJd8zHQ" base_Classifier="_bHLfkJnKEea8dteV6Gft2A"/>
   <DDSM:DdsmBigDataJob xmi:id="_gFP60KHHEeaCu9KI2y2fhQ" base_Artifact="_mmolcJnKEea8dteV6Gft2A"/>
   <DDSM:DdsmJobSubmission xmi:id="_ji_NAKHHEeaCu9KI2y2fhQ" base_Deployment="_iHopUKHHEeaCu9KI2y2fhQ"/>
+  <DDSM:DdsmKafkaCluster xmi:id="_cCx-MP59EeaV6ZmU0FMtwA" base_Node="_aU0nkP59EeaV6ZmU0FMtwA" base_ExecutionEnvironment="_aU0nkP59EeaV6ZmU0FMtwA"/>
+  <DDSM:DdsmHdfsCluster xmi:id="_5FAXQP59EeaV6ZmU0FMtwA" base_Node="_LhhucJnMEeay_qekZgZgrw"/>
+  <DDSM:DdsmYarnCluster xmi:id="_6xXLYP59EeaV6ZmU0FMtwA" base_Node="_ToPW4JnMEeay_qekZgZgrw"/>
+  <DDSM:DdsmCassandraCluster xmi:id="_DB1z0P5-EeaV6ZmU0FMtwA" base_Node="_vFgZwJnLEeay_qekZgZgrw"/>
+  <DDSM:DdsmZookeeperCluster xmi:id="_E8BokP5-EeaV6ZmU0FMtwA" base_Node="_YoBVgJnKEea8dteV6Gft2A"/>
+  <DDSM:DdsmVMsCluster xmi:id="_JoTxgP5-EeaV6ZmU0FMtwA" base_Device="_Qjs5wJnKEea8dteV6Gft2A"/>
+  <DDSM:DdsmJobDeployedFrom xmi:id="_U4XwgP5-EeaV6ZmU0FMtwA" base_Dependency="_RbhPIP5-EeaV6ZmU0FMtwA"/>
 </xmi:XMI>

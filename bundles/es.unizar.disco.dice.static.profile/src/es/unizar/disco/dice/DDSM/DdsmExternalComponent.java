@@ -40,7 +40,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 	 * @return the value of the '<em>Location</em>' attribute.
 	 * @see #setLocation(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmExternalComponent_Location()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getLocation();
@@ -57,6 +57,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 
 	/**
 	 * Returns the value of the '<em><b>Provider</b></em>' attribute.
+	 * The default value is <code>"fco"</code>.
 	 * The literals are from the enumeration {@link es.unizar.disco.dice.Basic_Enumeration_Types.ProviderType}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -68,7 +69,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.ProviderType
 	 * @see #setProvider(ProviderType)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmExternalComponent_Provider()
-	 * @model required="true" ordered="false"
+	 * @model default="fco" required="true" ordered="false"
 	 * @generated
 	 */
 	ProviderType getProvider();
@@ -95,7 +96,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 	 * @return the value of the '<em>Service Type</em>' attribute.
 	 * @see #setServiceType(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmExternalComponent_ServiceType()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getServiceType();
@@ -121,7 +122,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 	 * @return the value of the '<em>Region</em>' attribute.
 	 * @see #setRegion(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmExternalComponent_Region()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getRegion();
@@ -147,7 +148,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 	 * @return the value of the '<em>Login</em>' attribute.
 	 * @see #setLogin(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmExternalComponent_Login()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getLogin();
@@ -173,7 +174,7 @@ public interface DdsmExternalComponent extends DdsmComponent {
 	 * @return the value of the '<em>Password</em>' attribute.
 	 * @see #setPassword(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmExternalComponent_Password()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getPassword();

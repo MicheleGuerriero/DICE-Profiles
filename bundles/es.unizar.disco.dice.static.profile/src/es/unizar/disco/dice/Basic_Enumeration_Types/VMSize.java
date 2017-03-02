@@ -26,7 +26,7 @@ public enum VMSize implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	SMALL(0, "small", "small"),
+	SMALL(0, "Small", "Small"),
 
 	/**
 	 * The '<em><b>Medium</b></em>' literal object.
@@ -36,7 +36,7 @@ public enum VMSize implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MEDIUM(1, "medium", "medium"),
+	MEDIUM(1, "Medium", "Medium"),
 
 	/**
 	 * The '<em><b>Large</b></em>' literal object.
@@ -46,7 +46,7 @@ public enum VMSize implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	LARGE(2, "large", "large");
+	LARGE(2, "Large", "Large");
 
 	/**
 	 * The '<em><b>Small</b></em>' literal value.
@@ -57,7 +57,7 @@ public enum VMSize implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #SMALL
-	 * @model name="small"
+	 * @model name="Small"
 	 * @generated
 	 * @ordered
 	 */
@@ -72,7 +72,7 @@ public enum VMSize implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #MEDIUM
-	 * @model name="medium"
+	 * @model name="Medium"
 	 * @generated
 	 * @ordered
 	 */
@@ -87,7 +87,7 @@ public enum VMSize implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #LARGE
-	 * @model name="large"
+	 * @model name="Large"
 	 * @generated
 	 * @ordered
 	 */

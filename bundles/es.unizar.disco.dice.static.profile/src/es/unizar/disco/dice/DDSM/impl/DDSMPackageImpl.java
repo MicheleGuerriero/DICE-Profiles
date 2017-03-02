@@ -19,24 +19,23 @@ import es.unizar.disco.dice.Complex_Data_Types.impl.Complex_Data_TypesPackageImp
 import es.unizar.disco.dice.DDSM.DDSMFactory;
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.DdsmBigDataJob;
+import es.unizar.disco.dice.DDSM.DdsmCassandraCluster;
 import es.unizar.disco.dice.DDSM.DdsmCloudElement;
-import es.unizar.disco.dice.DDSM.DdsmCluster;
 import es.unizar.disco.dice.DDSM.DdsmComponent;
 import es.unizar.disco.dice.DDSM.DdsmExternalComponent;
+import es.unizar.disco.dice.DDSM.DdsmHdfsCluster;
+import es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster;
 import es.unizar.disco.dice.DDSM.DdsmInternalComponent;
 import es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom;
 import es.unizar.disco.dice.DDSM.DdsmJobSubmission;
-import es.unizar.disco.dice.DDSM.DdsmKafka;
-import es.unizar.disco.dice.DDSM.DdsmNimbus;
+import es.unizar.disco.dice.DDSM.DdsmKafkaCluster;
+import es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform;
+import es.unizar.disco.dice.DDSM.DdsmPeerToPeerPlatform;
 import es.unizar.disco.dice.DDSM.DdsmPort;
-import es.unizar.disco.dice.DDSM.DdsmResource;
 import es.unizar.disco.dice.DDSM.DdsmStormCluster;
-import es.unizar.disco.dice.DDSM.DdsmSupervisor;
-import es.unizar.disco.dice.DDSM.DdsmVm;
-import es.unizar.disco.dice.DDSM.DdsmYarnResourceManager;
-import es.unizar.disco.dice.DDSM.DdsmZookeeperServer;
-
-import es.unizar.disco.dice.DDSM.util.DDSMValidator;
+import es.unizar.disco.dice.DDSM.DdsmVMsCluster;
+import es.unizar.disco.dice.DDSM.DdsmYarnCluster;
+import es.unizar.disco.dice.DDSM.DdsmZookeeperCluster;
 
 import es.unizar.disco.dice.DICE.DICEPackage;
 
@@ -62,9 +61,10 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import org.eclipse.uml2.types.TypesPackage;
 
 import org.eclipse.uml2.uml.UMLPackage;
 
@@ -101,13 +101,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmResourceEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass ddsmPortEClass = null;
 
 	/**
@@ -122,56 +115,49 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmClusterEClass = null;
+	private EClass ddsmHeterogeneousClusterEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmVmEClass = null;
+	private EClass ddsmVMsClusterEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmYarnResourceManagerEClass = null;
+	private EClass ddsmYarnClusterEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmZookeeperServerEClass = null;
+	private EClass ddsmMasterSlavePlatformEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmKafkaEClass = null;
+	private EClass ddsmZookeeperClusterEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmNimbusEClass = null;
+	private EClass ddsmPeerToPeerPlatformEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ddsmJobSubmissionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass ddsmSupervisorEClass = null;
+	private EClass ddsmKafkaClusterEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,6 +165,13 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * @generated
 	 */
 	private EClass ddsmStormClusterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmJobSubmissionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -193,6 +186,20 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * @generated
 	 */
 	private EClass ddsmJobDeployedFromEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmHdfsClusterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ddsmCassandraClusterEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -277,15 +284,6 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		theComplex_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Data_TypesPackage_1.initializePackageContents();
 		theBasic_Enumeration_TypesPackage_1.initializePackageContents();
-
-		// Register package validator
-		EValidator.Registry.INSTANCE.put
-			(theDDSMPackage, 
-			 new EValidator.Descriptor() {
-				 public EValidator getEValidator() {
-					 return DDSMValidator.INSTANCE;
-				 }
-			 });
 
 		// Mark meta-data to indicate it can't be changed
 		theDDSMPackage.freeze();
@@ -418,53 +416,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDdsmCloudElement_ResourcesList() {
-		return (EReference)ddsmCloudElementEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDdsmCloudElement_Id() {
-		return (EAttribute)ddsmCloudElementEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDdsmResource() {
-		return ddsmResourceEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDdsmResource_CommandsList() {
-		return (EReference)ddsmResourceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getDdsmResource_Base_Artifact() {
-		return (EReference)ddsmResourceEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getDdsmResource_Id() {
-		return (EAttribute)ddsmResourceEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)ddsmCloudElementEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -553,8 +506,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDdsmCluster() {
-		return ddsmClusterEClass;
+	public EAttribute getDdsmInternalComponent_Protected() {
+		return (EAttribute)ddsmInternalComponentEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -562,8 +515,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDdsmCluster_HasVM() {
-		return (EReference)ddsmClusterEClass.getEStructuralFeatures().get(0);
+	public EAttribute getDdsmInternalComponent_Launch_script() {
+		return (EAttribute)ddsmInternalComponentEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -571,8 +524,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDdsmVm() {
-		return ddsmVmEClass;
+	public EAttribute getDdsmInternalComponent_Language() {
+		return (EAttribute)ddsmInternalComponentEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -580,8 +533,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_Is64os() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(0);
+	public EClass getDdsmHeterogeneousCluster() {
+		return ddsmHeterogeneousClusterEClass;
 	}
 
 	/**
@@ -589,8 +542,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_ImageId() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(1);
+	public EReference getDdsmHeterogeneousCluster_HasVM() {
+		return (EReference)ddsmHeterogeneousClusterEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -598,8 +551,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_MaxCores() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(2);
+	public EClass getDdsmVMsCluster() {
+		return ddsmVMsClusterEClass;
 	}
 
 	/**
@@ -607,8 +560,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_MaxRam() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(3);
+	public EAttribute getDdsmVMsCluster_Is64os() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -616,8 +569,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_MaxStorage() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(4);
+	public EAttribute getDdsmVMsCluster_ImageId() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -625,8 +578,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_MinCores() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(5);
+	public EAttribute getDdsmVMsCluster_MaxCores() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -634,8 +587,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_MinRam() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(6);
+	public EAttribute getDdsmVMsCluster_MaxRam() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -643,8 +596,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_MinStorage() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(7);
+	public EAttribute getDdsmVMsCluster_MaxStorage() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -652,8 +605,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_Os() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(8);
+	public EAttribute getDdsmVMsCluster_MinCores() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -661,8 +614,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_SecurityGroup() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(9);
+	public EAttribute getDdsmVMsCluster_MinRam() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -670,8 +623,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_PrivateKey() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(10);
+	public EAttribute getDdsmVMsCluster_MinStorage() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -679,8 +632,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_SshKey() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(11);
+	public EAttribute getDdsmVMsCluster_Os() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -688,8 +641,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_PublicAddress() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(12);
+	public EAttribute getDdsmVMsCluster_SecurityGroup() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -697,8 +650,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_Instances() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(13);
+	public EAttribute getDdsmVMsCluster_PrivateKey() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -706,8 +659,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmVm_GenericSize() {
-		return (EAttribute)ddsmVmEClass.getEStructuralFeatures().get(14);
+	public EAttribute getDdsmVMsCluster_SshKey() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -715,8 +668,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDdsmYarnResourceManager() {
-		return ddsmYarnResourceManagerEClass;
+	public EAttribute getDdsmVMsCluster_PublicAddress() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -724,8 +677,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDdsmZookeeperServer() {
-		return ddsmZookeeperServerEClass;
+	public EAttribute getDdsmVMsCluster_Instances() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -733,8 +686,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmZookeeperServer_TickTime() {
-		return (EAttribute)ddsmZookeeperServerEClass.getEStructuralFeatures().get(0);
+	public EAttribute getDdsmVMsCluster_GenericSize() {
+		return (EAttribute)ddsmVMsClusterEClass.getEStructuralFeatures().get(14);
 	}
 
 	/**
@@ -742,8 +695,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmZookeeperServer_SyncLimit() {
-		return (EAttribute)ddsmZookeeperServerEClass.getEStructuralFeatures().get(1);
+	public EClass getDdsmYarnCluster() {
+		return ddsmYarnClusterEClass;
 	}
 
 	/**
@@ -751,8 +704,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmZookeeperServer_InitLimit() {
-		return (EAttribute)ddsmZookeeperServerEClass.getEStructuralFeatures().get(2);
+	public EReference getDdsmYarnCluster_Base_ExecutionEnvironment() {
+		return (EReference)ddsmYarnClusterEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -760,8 +713,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDdsmKafka() {
-		return ddsmKafkaEClass;
+	public EClass getDdsmMasterSlavePlatform() {
+		return ddsmMasterSlavePlatformEClass;
 	}
 
 	/**
@@ -769,8 +722,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDdsmNimbus() {
-		return ddsmNimbusEClass;
+	public EReference getDdsmMasterSlavePlatform_MasterHost() {
+		return (EReference)ddsmMasterSlavePlatformEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -778,8 +731,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmNimbus_TaskTimeout() {
-		return (EAttribute)ddsmNimbusEClass.getEStructuralFeatures().get(0);
+	public EClass getDdsmZookeeperCluster() {
+		return ddsmZookeeperClusterEClass;
 	}
 
 	/**
@@ -787,8 +740,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmNimbus_SupervisorFrequency() {
-		return (EAttribute)ddsmNimbusEClass.getEStructuralFeatures().get(1);
+	public EAttribute getDdsmZookeeperCluster_TickTime() {
+		return (EAttribute)ddsmZookeeperClusterEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -796,8 +749,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmNimbus_QueueSize() {
-		return (EAttribute)ddsmNimbusEClass.getEStructuralFeatures().get(2);
+	public EAttribute getDdsmZookeeperCluster_SyncLimit() {
+		return (EAttribute)ddsmZookeeperClusterEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -805,8 +758,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmNimbus_MonitorFrequency() {
-		return (EAttribute)ddsmNimbusEClass.getEStructuralFeatures().get(3);
+	public EAttribute getDdsmZookeeperCluster_InitLimit() {
+		return (EAttribute)ddsmZookeeperClusterEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -814,8 +767,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmNimbus_RetryTimes() {
-		return (EAttribute)ddsmNimbusEClass.getEStructuralFeatures().get(4);
+	public EClass getDdsmPeerToPeerPlatform() {
+		return ddsmPeerToPeerPlatformEClass;
 	}
 
 	/**
@@ -823,8 +776,125 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmNimbus_RetryInterval() {
-		return (EAttribute)ddsmNimbusEClass.getEStructuralFeatures().get(5);
+	public EClass getDdsmKafkaCluster() {
+		return ddsmKafkaClusterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmKafkaCluster_Base_ExecutionEnvironment() {
+		return (EReference)ddsmKafkaClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmStormCluster() {
+		return ddsmStormClusterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_TaskTimeout() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_SupervisorFrequency() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_QueueSize() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_MonitorFrequency() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_RetryTimes() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_RetryInterval() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_WorkerStartTimeout() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_CpuCapacity() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_MemoryCapacity() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmStormCluster_HeartbeatFrequency() {
+		return (EAttribute)ddsmStormClusterEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmStormCluster_Base_ExecutionEnvironment() {
+		return (EReference)ddsmStormClusterEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -850,8 +920,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDdsmSupervisor() {
-		return ddsmSupervisorEClass;
+	public EAttribute getDdsmJobSubmission_NumberOfSubmission() {
+		return (EAttribute)ddsmJobSubmissionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -859,44 +929,8 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmSupervisor_WorkerStartTimeout() {
-		return (EAttribute)ddsmSupervisorEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getDdsmSupervisor_CpuCapacity() {
-		return (EAttribute)ddsmSupervisorEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getDdsmSupervisor_MemoryCapacity() {
-		return (EAttribute)ddsmSupervisorEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getDdsmSupervisor_HeartbeatFrequency() {
-		return (EAttribute)ddsmSupervisorEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getDdsmStormCluster() {
-		return ddsmStormClusterEClass;
+	public EAttribute getDdsmJobSubmission_IntervalBetweenSubmission() {
+		return (EAttribute)ddsmJobSubmissionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -913,7 +947,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmBigDataJob_ArtifactURL() {
+	public EAttribute getDdsmBigDataJob_Application() {
 		return (EAttribute)ddsmBigDataJobEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -922,7 +956,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDdsmBigDataJob_MainClass() {
+	public EAttribute getDdsmBigDataJob_Application_class() {
 		return (EAttribute)ddsmBigDataJobEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -933,6 +967,24 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 */
 	public EReference getDdsmBigDataJob_Base_Artifact() {
 		return (EReference)ddsmBigDataJobEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmBigDataJob_Application_name() {
+		return (EAttribute)ddsmBigDataJobEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmBigDataJob_Arguments() {
+		return (EAttribute)ddsmBigDataJobEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -951,6 +1003,96 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 	 */
 	public EReference getDdsmJobDeployedFrom_Base_Dependency() {
 		return (EReference)ddsmJobDeployedFromEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmHdfsCluster() {
+		return ddsmHdfsClusterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDdsmCassandraCluster() {
+		return ddsmCassandraClusterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDdsmCassandraCluster_SeedHost() {
+		return (EReference)ddsmCassandraClusterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmCassandraCluster_Key_cache_keys_to_save() {
+		return (EAttribute)ddsmCassandraClusterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmCassandraCluster_Key_cache_save_period() {
+		return (EAttribute)ddsmCassandraClusterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmCassandraCluster_Memtable_cleanup_threshold() {
+		return (EAttribute)ddsmCassandraClusterEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmCassandraCluster_Memtable_flush_writers() {
+		return (EAttribute)ddsmCassandraClusterEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmCassandraCluster_Authenticator_enabled() {
+		return (EAttribute)ddsmCassandraClusterEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmCassandraCluster_Authorizer_enabled() {
+		return (EAttribute)ddsmCassandraClusterEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDdsmCassandraCluster_Permission_validity_in_ms() {
+		return (EAttribute)ddsmCassandraClusterEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -996,13 +1138,7 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		ddsmCloudElementEClass = createEClass(DDSM_CLOUD_ELEMENT);
 		createEAttribute(ddsmCloudElementEClass, DDSM_CLOUD_ELEMENT__DESCRIPTION);
 		createEAttribute(ddsmCloudElementEClass, DDSM_CLOUD_ELEMENT__PROPERTIES_LIST);
-		createEReference(ddsmCloudElementEClass, DDSM_CLOUD_ELEMENT__RESOURCES_LIST);
 		createEAttribute(ddsmCloudElementEClass, DDSM_CLOUD_ELEMENT__ID);
-
-		ddsmResourceEClass = createEClass(DDSM_RESOURCE);
-		createEReference(ddsmResourceEClass, DDSM_RESOURCE__COMMANDS_LIST);
-		createEReference(ddsmResourceEClass, DDSM_RESOURCE__BASE_ARTIFACT);
-		createEAttribute(ddsmResourceEClass, DDSM_RESOURCE__ID);
 
 		ddsmPortEClass = createEClass(DDSM_PORT);
 		createEAttribute(ddsmPortEClass, DDSM_PORT__IS_LOCAL);
@@ -1014,62 +1150,85 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__IS_FRONT_END);
 		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE);
 		createEReference(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__BASE_NODE);
+		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__PROTECTED);
+		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT);
+		createEAttribute(ddsmInternalComponentEClass, DDSM_INTERNAL_COMPONENT__LANGUAGE);
 
-		ddsmClusterEClass = createEClass(DDSM_CLUSTER);
-		createEReference(ddsmClusterEClass, DDSM_CLUSTER__HAS_VM);
+		ddsmHeterogeneousClusterEClass = createEClass(DDSM_HETEROGENEOUS_CLUSTER);
+		createEReference(ddsmHeterogeneousClusterEClass, DDSM_HETEROGENEOUS_CLUSTER__HAS_VM);
 
-		ddsmVmEClass = createEClass(DDSM_VM);
-		createEAttribute(ddsmVmEClass, DDSM_VM__IS64OS);
-		createEAttribute(ddsmVmEClass, DDSM_VM__IMAGE_ID);
-		createEAttribute(ddsmVmEClass, DDSM_VM__MAX_CORES);
-		createEAttribute(ddsmVmEClass, DDSM_VM__MAX_RAM);
-		createEAttribute(ddsmVmEClass, DDSM_VM__MAX_STORAGE);
-		createEAttribute(ddsmVmEClass, DDSM_VM__MIN_CORES);
-		createEAttribute(ddsmVmEClass, DDSM_VM__MIN_RAM);
-		createEAttribute(ddsmVmEClass, DDSM_VM__MIN_STORAGE);
-		createEAttribute(ddsmVmEClass, DDSM_VM__OS);
-		createEAttribute(ddsmVmEClass, DDSM_VM__SECURITY_GROUP);
-		createEAttribute(ddsmVmEClass, DDSM_VM__PRIVATE_KEY);
-		createEAttribute(ddsmVmEClass, DDSM_VM__SSH_KEY);
-		createEAttribute(ddsmVmEClass, DDSM_VM__PUBLIC_ADDRESS);
-		createEAttribute(ddsmVmEClass, DDSM_VM__INSTANCES);
-		createEAttribute(ddsmVmEClass, DDSM_VM__GENERIC_SIZE);
+		ddsmVMsClusterEClass = createEClass(DDSM_VMS_CLUSTER);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__IS64OS);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__IMAGE_ID);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MAX_CORES);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MAX_RAM);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MAX_STORAGE);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MIN_CORES);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MIN_RAM);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__MIN_STORAGE);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__OS);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__SECURITY_GROUP);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__PRIVATE_KEY);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__SSH_KEY);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__PUBLIC_ADDRESS);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__INSTANCES);
+		createEAttribute(ddsmVMsClusterEClass, DDSM_VMS_CLUSTER__GENERIC_SIZE);
 
-		ddsmYarnResourceManagerEClass = createEClass(DDSM_YARN_RESOURCE_MANAGER);
+		ddsmYarnClusterEClass = createEClass(DDSM_YARN_CLUSTER);
+		createEReference(ddsmYarnClusterEClass, DDSM_YARN_CLUSTER__BASE_EXECUTION_ENVIRONMENT);
 
-		ddsmZookeeperServerEClass = createEClass(DDSM_ZOOKEEPER_SERVER);
-		createEAttribute(ddsmZookeeperServerEClass, DDSM_ZOOKEEPER_SERVER__TICK_TIME);
-		createEAttribute(ddsmZookeeperServerEClass, DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT);
-		createEAttribute(ddsmZookeeperServerEClass, DDSM_ZOOKEEPER_SERVER__INIT_LIMIT);
+		ddsmMasterSlavePlatformEClass = createEClass(DDSM_MASTER_SLAVE_PLATFORM);
+		createEReference(ddsmMasterSlavePlatformEClass, DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST);
 
-		ddsmKafkaEClass = createEClass(DDSM_KAFKA);
+		ddsmZookeeperClusterEClass = createEClass(DDSM_ZOOKEEPER_CLUSTER);
+		createEAttribute(ddsmZookeeperClusterEClass, DDSM_ZOOKEEPER_CLUSTER__TICK_TIME);
+		createEAttribute(ddsmZookeeperClusterEClass, DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT);
+		createEAttribute(ddsmZookeeperClusterEClass, DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT);
 
-		ddsmNimbusEClass = createEClass(DDSM_NIMBUS);
-		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__TASK_TIMEOUT);
-		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__SUPERVISOR_FREQUENCY);
-		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__QUEUE_SIZE);
-		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__MONITOR_FREQUENCY);
-		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__RETRY_TIMES);
-		createEAttribute(ddsmNimbusEClass, DDSM_NIMBUS__RETRY_INTERVAL);
+		ddsmPeerToPeerPlatformEClass = createEClass(DDSM_PEER_TO_PEER_PLATFORM);
+
+		ddsmKafkaClusterEClass = createEClass(DDSM_KAFKA_CLUSTER);
+		createEReference(ddsmKafkaClusterEClass, DDSM_KAFKA_CLUSTER__BASE_EXECUTION_ENVIRONMENT);
+
+		ddsmStormClusterEClass = createEClass(DDSM_STORM_CLUSTER);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__TASK_TIMEOUT);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__SUPERVISOR_FREQUENCY);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__QUEUE_SIZE);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__MONITOR_FREQUENCY);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__RETRY_TIMES);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__RETRY_INTERVAL);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__WORKER_START_TIMEOUT);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__CPU_CAPACITY);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__MEMORY_CAPACITY);
+		createEAttribute(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__HEARTBEAT_FREQUENCY);
+		createEReference(ddsmStormClusterEClass, DDSM_STORM_CLUSTER__BASE_EXECUTION_ENVIRONMENT);
 
 		ddsmJobSubmissionEClass = createEClass(DDSM_JOB_SUBMISSION);
 		createEReference(ddsmJobSubmissionEClass, DDSM_JOB_SUBMISSION__BASE_DEPLOYMENT);
-
-		ddsmSupervisorEClass = createEClass(DDSM_SUPERVISOR);
-		createEAttribute(ddsmSupervisorEClass, DDSM_SUPERVISOR__WORKER_START_TIMEOUT);
-		createEAttribute(ddsmSupervisorEClass, DDSM_SUPERVISOR__CPU_CAPACITY);
-		createEAttribute(ddsmSupervisorEClass, DDSM_SUPERVISOR__MEMORY_CAPACITY);
-		createEAttribute(ddsmSupervisorEClass, DDSM_SUPERVISOR__HEARTBEAT_FREQUENCY);
-
-		ddsmStormClusterEClass = createEClass(DDSM_STORM_CLUSTER);
+		createEAttribute(ddsmJobSubmissionEClass, DDSM_JOB_SUBMISSION__NUMBER_OF_SUBMISSION);
+		createEAttribute(ddsmJobSubmissionEClass, DDSM_JOB_SUBMISSION__INTERVAL_BETWEEN_SUBMISSION);
 
 		ddsmBigDataJobEClass = createEClass(DDSM_BIG_DATA_JOB);
-		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__ARTIFACT_URL);
-		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__MAIN_CLASS);
+		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__APPLICATION);
+		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__APPLICATION_CLASS);
 		createEReference(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__BASE_ARTIFACT);
+		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__APPLICATION_NAME);
+		createEAttribute(ddsmBigDataJobEClass, DDSM_BIG_DATA_JOB__ARGUMENTS);
 
 		ddsmJobDeployedFromEClass = createEClass(DDSM_JOB_DEPLOYED_FROM);
 		createEReference(ddsmJobDeployedFromEClass, DDSM_JOB_DEPLOYED_FROM__BASE_DEPENDENCY);
+
+		ddsmHdfsClusterEClass = createEClass(DDSM_HDFS_CLUSTER);
+
+		ddsmCassandraClusterEClass = createEClass(DDSM_CASSANDRA_CLUSTER);
+		createEReference(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__SEED_HOST);
+		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__KEY_CACHE_KEYS_TO_SAVE);
+		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__KEY_CACHE_SAVE_PERIOD);
+		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__MEMTABLE_CLEANUP_THRESHOLD);
+		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__MEMTABLE_FLUSH_WRITERS);
+		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__AUTHENTICATOR_ENABLED);
+		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__AUTHORIZER_ENABLED);
+		createEAttribute(ddsmCassandraClusterEClass, DDSM_CASSANDRA_CLUSTER__PERMISSION_VALIDITY_IN_MS);
 	}
 
 	/**
@@ -1096,9 +1255,9 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
+		TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
 		es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage theBasic_Enumeration_TypesPackage_1 = (es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Enumeration_Types.Basic_Enumeration_TypesPackage.eNS_URI);
 		UMLPackage theUMLPackage = (UMLPackage)EPackage.Registry.INSTANCE.getEPackage(UMLPackage.eNS_URI);
-		es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage theBasic_Data_TypesPackage_1 = (es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage)EPackage.Registry.INSTANCE.getEPackage(es.unizar.disco.dice.Basic_Data_Types.Basic_Data_TypesPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -1109,166 +1268,124 @@ public class DDSMPackageImpl extends EPackageImpl implements DDSMPackage {
 		ddsmComponentEClass.getESuperTypes().add(this.getDdsmCloudElement());
 		ddsmPortEClass.getESuperTypes().add(this.getDdsmCloudElement());
 		ddsmInternalComponentEClass.getESuperTypes().add(this.getDdsmComponent());
-		ddsmClusterEClass.getESuperTypes().add(this.getDdsmExternalComponent());
-		ddsmVmEClass.getESuperTypes().add(this.getDdsmExternalComponent());
-		ddsmYarnResourceManagerEClass.getESuperTypes().add(this.getDdsmInternalComponent());
-		ddsmZookeeperServerEClass.getESuperTypes().add(this.getDdsmInternalComponent());
-		ddsmKafkaEClass.getESuperTypes().add(this.getDdsmInternalComponent());
-		ddsmNimbusEClass.getESuperTypes().add(this.getDdsmInternalComponent());
-		ddsmSupervisorEClass.getESuperTypes().add(this.getDdsmInternalComponent());
-		ddsmStormClusterEClass.getESuperTypes().add(this.getDdsmInternalComponent());
+		ddsmHeterogeneousClusterEClass.getESuperTypes().add(this.getDdsmExternalComponent());
+		ddsmVMsClusterEClass.getESuperTypes().add(this.getDdsmExternalComponent());
+		ddsmYarnClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
+		ddsmMasterSlavePlatformEClass.getESuperTypes().add(this.getDdsmInternalComponent());
+		ddsmZookeeperClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
+		ddsmPeerToPeerPlatformEClass.getESuperTypes().add(this.getDdsmInternalComponent());
+		ddsmKafkaClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
+		ddsmStormClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
+		ddsmHdfsClusterEClass.getESuperTypes().add(this.getDdsmMasterSlavePlatform());
+		ddsmCassandraClusterEClass.getESuperTypes().add(this.getDdsmPeerToPeerPlatform());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(ddsmExternalComponentEClass, DdsmExternalComponent.class, "DdsmExternalComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmExternalComponent_Location(), ecorePackage.getEString(), "location", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmExternalComponent_Provider(), theBasic_Enumeration_TypesPackage_1.getProviderType(), "provider", null, 1, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmExternalComponent_ServiceType(), ecorePackage.getEString(), "serviceType", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmExternalComponent_Region(), ecorePackage.getEString(), "region", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmExternalComponent_Login(), ecorePackage.getEString(), "login", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmExternalComponent_Password(), ecorePackage.getEString(), "password", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmExternalComponent_Location(), theTypesPackage.getString(), "location", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmExternalComponent_Provider(), theBasic_Enumeration_TypesPackage_1.getProviderType(), "provider", "fco", 1, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmExternalComponent_ServiceType(), theTypesPackage.getString(), "serviceType", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmExternalComponent_Region(), theTypesPackage.getString(), "region", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmExternalComponent_Login(), theTypesPackage.getString(), "login", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmExternalComponent_Password(), theTypesPackage.getString(), "password", null, 0, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmExternalComponent_Base_Device(), theUMLPackage.getDevice(), null, "base_Device", null, 1, 1, DdsmExternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmComponentEClass, DdsmComponent.class, "DdsmComponent", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmComponent_ProvidedPortsList(), this.getDdsmPort(), null, "providedPortsList", null, 0, -1, DdsmComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmCloudElementEClass, DdsmCloudElement.class, "DdsmCloudElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmCloudElement_Description(), ecorePackage.getEString(), "description", null, 0, 1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmCloudElement_PropertiesList(), ecorePackage.getEString(), "propertiesList", null, 0, -1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDdsmCloudElement_ResourcesList(), this.getDdsmResource(), null, "resourcesList", null, 0, -1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmCloudElement_Id(), ecorePackage.getEString(), "id", null, 0, 1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(ddsmResourceEClass, DdsmResource.class, "DdsmResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDdsmResource_CommandsList(), theBasic_Data_TypesPackage_1.getScriptType(), null, "commandsList", null, 0, -1, DdsmResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getDdsmResource_Base_Artifact(), theUMLPackage.getArtifact(), null, "base_Artifact", null, 1, 1, DdsmResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmResource_Id(), ecorePackage.getEString(), "id", null, 1, 1, DdsmResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCloudElement_Description(), theTypesPackage.getString(), "description", null, 0, 1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCloudElement_PropertiesList(), theTypesPackage.getString(), "propertiesList", null, 0, -1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCloudElement_Id(), theTypesPackage.getString(), "id", null, 0, 1, DdsmCloudElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmPortEClass, DdsmPort.class, "DdsmPort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmPort_IsLocal(), ecorePackage.getEBoolean(), "isLocal", "false", 0, 1, DdsmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmPort_PortNumber(), ecorePackage.getEString(), "portNumber", null, 0, 1, DdsmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmPort_IsLocal(), theTypesPackage.getBoolean(), "isLocal", "false", 0, 1, DdsmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmPort_PortNumber(), theTypesPackage.getString(), "portNumber", null, 0, 1, DdsmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmPort_Base_CommunicationPath(), theUMLPackage.getCommunicationPath(), null, "base_CommunicationPath", null, 1, 1, DdsmPort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmInternalComponentEClass, DdsmInternalComponent.class, "DdsmInternalComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmInternalComponent_RequiredPort(), this.getDdsmPort(), null, "requiredPort", null, 0, -1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmInternalComponent_IsFrontEnd(), ecorePackage.getEBoolean(), "isFrontEnd", "false", 1, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmInternalComponent_ComponentType(), theBasic_Enumeration_TypesPackage_1.getDDSMcomponentType(), "componentType", null, 1, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmInternalComponent_IsFrontEnd(), theTypesPackage.getString(), "isFrontEnd", "false", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmInternalComponent_ComponentType(), theBasic_Enumeration_TypesPackage_1.getDDSMcomponentType(), "componentType", null, 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmInternalComponent_Base_Node(), theUMLPackage.getNode(), null, "base_Node", null, 1, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmInternalComponent_Protected(), theTypesPackage.getBoolean(), "protected", "false", 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmInternalComponent_Launch_script(), theTypesPackage.getString(), "launch_script", null, 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmInternalComponent_Language(), theTypesPackage.getString(), "language", null, 0, 1, DdsmInternalComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(ddsmClusterEClass, DdsmCluster.class, "DdsmCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDdsmCluster_HasVM(), this.getDdsmVm(), null, "hasVM", null, 0, -1, DdsmCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(ddsmHeterogeneousClusterEClass, DdsmHeterogeneousCluster.class, "DdsmHeterogeneousCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDdsmHeterogeneousCluster_HasVM(), this.getDdsmVMsCluster(), null, "hasVM", null, 0, -1, DdsmHeterogeneousCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(ddsmVmEClass, DdsmVm.class, "DdsmVm", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmVm_Is64os(), ecorePackage.getEBoolean(), "is64os", "true", 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_ImageId(), ecorePackage.getEString(), "imageId", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_MaxCores(), ecorePackage.getEInt(), "maxCores", null, 1, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_MaxRam(), ecorePackage.getEInt(), "maxRam", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_MaxStorage(), ecorePackage.getEInt(), "maxStorage", "0", 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_MinCores(), ecorePackage.getEInt(), "minCores", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_MinRam(), ecorePackage.getEInt(), "minRam", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_MinStorage(), ecorePackage.getEInt(), "minStorage", "0", 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_Os(), ecorePackage.getEString(), "os", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_SecurityGroup(), ecorePackage.getEString(), "securityGroup", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_PrivateKey(), ecorePackage.getEString(), "privateKey", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_SshKey(), ecorePackage.getEString(), "sshKey", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_PublicAddress(), ecorePackage.getEString(), "publicAddress", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_Instances(), ecorePackage.getEIntegerObject(), "instances", "0", 1, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmVm_GenericSize(), theBasic_Enumeration_TypesPackage_1.getVMSize(), "genericSize", null, 0, 1, DdsmVm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(ddsmVMsClusterEClass, DdsmVMsCluster.class, "DdsmVMsCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmVMsCluster_Is64os(), theTypesPackage.getBoolean(), "is64os", "true", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_ImageId(), theTypesPackage.getString(), "imageId", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_MaxCores(), theTypesPackage.getInteger(), "maxCores", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_MaxRam(), theTypesPackage.getInteger(), "maxRam", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_MaxStorage(), theTypesPackage.getInteger(), "maxStorage", "0", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_MinCores(), theTypesPackage.getInteger(), "minCores", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_MinRam(), theTypesPackage.getInteger(), "minRam", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_MinStorage(), theTypesPackage.getInteger(), "minStorage", "0", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_Os(), theTypesPackage.getString(), "os", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_SecurityGroup(), theTypesPackage.getString(), "securityGroup", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_PrivateKey(), theTypesPackage.getString(), "privateKey", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_SshKey(), theTypesPackage.getString(), "sshKey", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_PublicAddress(), theTypesPackage.getString(), "publicAddress", null, 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_Instances(), theTypesPackage.getInteger(), "instances", "1", 0, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmVMsCluster_GenericSize(), theBasic_Enumeration_TypesPackage_1.getVMSize(), "genericSize", "Small", 1, 1, DdsmVMsCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(ddsmYarnResourceManagerEClass, DdsmYarnResourceManager.class, "DdsmYarnResourceManager", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(ddsmYarnClusterEClass, DdsmYarnCluster.class, "DdsmYarnCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDdsmYarnCluster_Base_ExecutionEnvironment(), theUMLPackage.getExecutionEnvironment(), null, "base_ExecutionEnvironment", null, 1, 1, DdsmYarnCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(ddsmZookeeperServerEClass, DdsmZookeeperServer.class, "DdsmZookeeperServer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmZookeeperServer_TickTime(), ecorePackage.getEInt(), "tickTime", "1500", 1, 1, DdsmZookeeperServer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmZookeeperServer_SyncLimit(), ecorePackage.getEInt(), "syncLimit", "10", 1, 1, DdsmZookeeperServer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmZookeeperServer_InitLimit(), ecorePackage.getEInt(), "initLimit", "5", 1, 1, DdsmZookeeperServer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(ddsmMasterSlavePlatformEClass, DdsmMasterSlavePlatform.class, "DdsmMasterSlavePlatform", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDdsmMasterSlavePlatform_MasterHost(), this.getDdsmVMsCluster(), null, "masterHost", null, 0, 1, DdsmMasterSlavePlatform.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(ddsmKafkaEClass, DdsmKafka.class, "DdsmKafka", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(ddsmZookeeperClusterEClass, DdsmZookeeperCluster.class, "DdsmZookeeperCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmZookeeperCluster_TickTime(), theTypesPackage.getInteger(), "tickTime", "1500", 0, 1, DdsmZookeeperCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmZookeeperCluster_SyncLimit(), theTypesPackage.getInteger(), "syncLimit", "10", 0, 1, DdsmZookeeperCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmZookeeperCluster_InitLimit(), theTypesPackage.getInteger(), "initLimit", "5", 0, 1, DdsmZookeeperCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(ddsmNimbusEClass, DdsmNimbus.class, "DdsmNimbus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmNimbus_TaskTimeout(), ecorePackage.getEInt(), "taskTimeout", "60", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmNimbus_SupervisorFrequency(), ecorePackage.getEInt(), "supervisorFrequency", "60", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmNimbus_QueueSize(), ecorePackage.getEInt(), "queueSize", "10000", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmNimbus_MonitorFrequency(), ecorePackage.getEInt(), "monitorFrequency", "40", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmNimbus_RetryTimes(), ecorePackage.getEInt(), "retryTimes", "5", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmNimbus_RetryInterval(), ecorePackage.getEInt(), "retryInterval", "2000", 1, 1, DdsmNimbus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(ddsmPeerToPeerPlatformEClass, DdsmPeerToPeerPlatform.class, "DdsmPeerToPeerPlatform", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(ddsmKafkaClusterEClass, DdsmKafkaCluster.class, "DdsmKafkaCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDdsmKafkaCluster_Base_ExecutionEnvironment(), theUMLPackage.getExecutionEnvironment(), null, "base_ExecutionEnvironment", null, 1, 1, DdsmKafkaCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(ddsmStormClusterEClass, DdsmStormCluster.class, "DdsmStormCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmStormCluster_TaskTimeout(), theTypesPackage.getInteger(), "taskTimeout", "60", 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_SupervisorFrequency(), theTypesPackage.getInteger(), "supervisorFrequency", "60", 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_QueueSize(), theTypesPackage.getInteger(), "queueSize", "10000", 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_MonitorFrequency(), theTypesPackage.getInteger(), "monitorFrequency", "40", 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_RetryTimes(), theTypesPackage.getInteger(), "retryTimes", "5", 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_RetryInterval(), theTypesPackage.getInteger(), "retryInterval", "2000", 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_WorkerStartTimeout(), theTypesPackage.getInteger(), "workerStartTimeout", null, 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_CpuCapacity(), theTypesPackage.getInteger(), "cpuCapacity", null, 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_MemoryCapacity(), theTypesPackage.getInteger(), "memoryCapacity", null, 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmStormCluster_HeartbeatFrequency(), theTypesPackage.getInteger(), "heartbeatFrequency", null, 0, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getDdsmStormCluster_Base_ExecutionEnvironment(), theUMLPackage.getExecutionEnvironment(), null, "base_ExecutionEnvironment", null, 1, 1, DdsmStormCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmJobSubmissionEClass, DdsmJobSubmission.class, "DdsmJobSubmission", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmJobSubmission_Base_Deployment(), theUMLPackage.getDeployment(), null, "base_Deployment", null, 1, 1, DdsmJobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(ddsmSupervisorEClass, DdsmSupervisor.class, "DdsmSupervisor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmSupervisor_WorkerStartTimeout(), ecorePackage.getEInt(), "workerStartTimeout", "120", 1, 1, DdsmSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmSupervisor_CpuCapacity(), ecorePackage.getEInt(), "cpuCapacity", "400", 1, 1, DdsmSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmSupervisor_MemoryCapacity(), ecorePackage.getEInt(), "memoryCapacity", "4096", 1, 1, DdsmSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmSupervisor_HeartbeatFrequency(), ecorePackage.getEInt(), "heartbeatFrequency", "5", 1, 1, DdsmSupervisor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-
-		initEClass(ddsmStormClusterEClass, DdsmStormCluster.class, "DdsmStormCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDdsmJobSubmission_NumberOfSubmission(), theTypesPackage.getInteger(), "numberOfSubmission", null, 0, 1, DdsmJobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmJobSubmission_IntervalBetweenSubmission(), theTypesPackage.getInteger(), "intervalBetweenSubmission", null, 0, 1, DdsmJobSubmission.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmBigDataJobEClass, DdsmBigDataJob.class, "DdsmBigDataJob", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDdsmBigDataJob_ArtifactURL(), ecorePackage.getEString(), "artifactURL", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getDdsmBigDataJob_MainClass(), ecorePackage.getEString(), "mainClass", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmBigDataJob_Application(), theTypesPackage.getString(), "application", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmBigDataJob_Application_class(), theTypesPackage.getString(), "application_class", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getDdsmBigDataJob_Base_Artifact(), theUMLPackage.getArtifact(), null, "base_Artifact", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmBigDataJob_Application_name(), theTypesPackage.getString(), "application_name", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmBigDataJob_Arguments(), theTypesPackage.getString(), "arguments", null, 1, 1, DdsmBigDataJob.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(ddsmJobDeployedFromEClass, DdsmJobDeployedFrom.class, "DdsmJobDeployedFrom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDdsmJobDeployedFrom_Base_Dependency(), theUMLPackage.getDependency(), null, "base_Dependency", null, 1, 1, DdsmJobDeployedFrom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		// Create annotations
-		// duplicates
-		createDuplicatesAnnotations();
-		// http://www.eclipse.org/emf/2002/Ecore
-		createEcoreAnnotations();
-	}
+		initEClass(ddsmHdfsClusterEClass, DdsmHdfsCluster.class, "DdsmHdfsCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-	/**
-	 * Initializes the annotations for <b>duplicates</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createDuplicatesAnnotations() {
-		String source = "duplicates";	
-		addAnnotation
-		  (ddsmResourceEClass, 
-		   source, 
-		   new String[] {
-		   });
-	}
-
-	/**
-	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void createEcoreAnnotations() {
-		String source = "http://www.eclipse.org/emf/2002/Ecore";	
-		addAnnotation
-		  (ddsmYarnResourceManagerEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "YarnTypeMasterNode"
-		   });	
-		addAnnotation
-		  (ddsmZookeeperServerEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "ZookeeperServerTypePeefNode"
-		   });	
-		addAnnotation
-		  (ddsmNimbusEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "NimbusTypeMasterNode"
-		   });	
-		addAnnotation
-		  (ddsmSupervisorEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "SupervisorTypeSlaveNode"
-		   });	
-		addAnnotation
-		  (ddsmStormClusterEClass, 
-		   source, 
-		   new String[] {
-			 "constraints", "StormClusterTypeMasterSlavePlatform"
-		   });
+		initEClass(ddsmCassandraClusterEClass, DdsmCassandraCluster.class, "DdsmCassandraCluster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDdsmCassandraCluster_SeedHost(), this.getDdsmVMsCluster(), null, "seedHost", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCassandraCluster_Key_cache_keys_to_save(), theTypesPackage.getInteger(), "key_cache_keys_to_save", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCassandraCluster_Key_cache_save_period(), theTypesPackage.getInteger(), "key_cache_save_period", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCassandraCluster_Memtable_cleanup_threshold(), theTypesPackage.getInteger(), "memtable_cleanup_threshold", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCassandraCluster_Memtable_flush_writers(), theTypesPackage.getInteger(), "memtable_flush_writers", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCassandraCluster_Authenticator_enabled(), theTypesPackage.getBoolean(), "authenticator_enabled", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCassandraCluster_Authorizer_enabled(), theTypesPackage.getBoolean(), "authorizer_enabled", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getDdsmCassandraCluster_Permission_validity_in_ms(), theTypesPackage.getInteger(), "permission_validity_in_ms", null, 0, 1, DdsmCassandraCluster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 	}
 
 } //DDSMPackageImpl

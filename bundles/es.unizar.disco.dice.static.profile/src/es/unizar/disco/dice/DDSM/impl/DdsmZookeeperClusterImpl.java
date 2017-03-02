@@ -3,7 +3,7 @@
 package es.unizar.disco.dice.DDSM.impl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
-import es.unizar.disco.dice.DDSM.DdsmZookeeperServer;
+import es.unizar.disco.dice.DDSM.DdsmZookeeperCluster;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -13,20 +13,20 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Ddsm Zookeeper Server</b></em>'.
+ * An implementation of the model object '<em><b>Ddsm Zookeeper Cluster</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperServerImpl#getTickTime <em>Tick Time</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperServerImpl#getSyncLimit <em>Sync Limit</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperServerImpl#getInitLimit <em>Init Limit</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperClusterImpl#getTickTime <em>Tick Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperClusterImpl#getSyncLimit <em>Sync Limit</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperClusterImpl#getInitLimit <em>Init Limit</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implements DdsmZookeeperServer {
+public class DdsmZookeeperClusterImpl extends DdsmPeerToPeerPlatformImpl implements DdsmZookeeperCluster {
 	/**
 	 * The default value of the '{@link #getTickTime() <em>Tick Time</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -92,7 +92,7 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DdsmZookeeperServerImpl() {
+	protected DdsmZookeeperClusterImpl() {
 		super();
 	}
 
@@ -103,7 +103,7 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DDSMPackage.Literals.DDSM_ZOOKEEPER_SERVER;
+		return DDSMPackage.Literals.DDSM_ZOOKEEPER_CLUSTER;
 	}
 
 	/**
@@ -124,7 +124,7 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 		int oldTickTime = tickTime;
 		tickTime = newTickTime;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_ZOOKEEPER_SERVER__TICK_TIME, oldTickTime, tickTime));
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__TICK_TIME, oldTickTime, tickTime));
 	}
 
 	/**
@@ -145,7 +145,7 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 		int oldSyncLimit = syncLimit;
 		syncLimit = newSyncLimit;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT, oldSyncLimit, syncLimit));
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT, oldSyncLimit, syncLimit));
 	}
 
 	/**
@@ -166,7 +166,7 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 		int oldInitLimit = initLimit;
 		initLimit = newInitLimit;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_ZOOKEEPER_SERVER__INIT_LIMIT, oldInitLimit, initLimit));
+			eNotify(new ENotificationImpl(this, Notification.SET, DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT, oldInitLimit, initLimit));
 	}
 
 	/**
@@ -177,11 +177,11 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__TICK_TIME:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__TICK_TIME:
 				return getTickTime();
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT:
 				return getSyncLimit();
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__INIT_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT:
 				return getInitLimit();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -195,13 +195,13 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__TICK_TIME:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__TICK_TIME:
 				setTickTime((Integer)newValue);
 				return;
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT:
 				setSyncLimit((Integer)newValue);
 				return;
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__INIT_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT:
 				setInitLimit((Integer)newValue);
 				return;
 		}
@@ -216,13 +216,13 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__TICK_TIME:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__TICK_TIME:
 				setTickTime(TICK_TIME_EDEFAULT);
 				return;
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT:
 				setSyncLimit(SYNC_LIMIT_EDEFAULT);
 				return;
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__INIT_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT:
 				setInitLimit(INIT_LIMIT_EDEFAULT);
 				return;
 		}
@@ -237,11 +237,11 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__TICK_TIME:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__TICK_TIME:
 				return tickTime != TICK_TIME_EDEFAULT;
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT:
 				return syncLimit != SYNC_LIMIT_EDEFAULT;
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER__INIT_LIMIT:
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT:
 				return initLimit != INIT_LIMIT_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
@@ -267,4 +267,4 @@ public class DdsmZookeeperServerImpl extends DdsmInternalComponentImpl implement
 		return result.toString();
 	}
 
-} //DdsmZookeeperServerImpl
+} //DdsmZookeeperClusterImpl

@@ -562,7 +562,7 @@ public class Basic_Enumeration_TypesPackageImpl extends EPackageImpl implements 
 		addEEnumLiteral(vmSizeEEnum, VMSize.LARGE);
 
 		initEEnum(providerTypeEEnum, ProviderType.class, "ProviderType");
-		addEEnumLiteral(providerTypeEEnum, ProviderType.FLEXIANT);
+		addEEnumLiteral(providerTypeEEnum, ProviderType.FCO);
 		addEEnumLiteral(providerTypeEEnum, ProviderType.OPENSTACK);
 
 		initEEnum(ddsMcomponentTypeEEnum, DDSMcomponentType.class, "DDSMcomponentType");

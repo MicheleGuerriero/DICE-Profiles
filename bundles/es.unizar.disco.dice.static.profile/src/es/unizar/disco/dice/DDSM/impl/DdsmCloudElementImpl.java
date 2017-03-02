@@ -4,7 +4,6 @@ package es.unizar.disco.dice.DDSM.impl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
 import es.unizar.disco.dice.DDSM.DdsmCloudElement;
-import es.unizar.disco.dice.DDSM.DdsmResource;
 
 import java.util.Collection;
 
@@ -18,7 +17,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +28,6 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmCloudElementImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmCloudElementImpl#getPropertiesList <em>Properties List</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmCloudElementImpl#getResourcesList <em>Resources List</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmCloudElementImpl#getId <em>Id</em>}</li>
  * </ul>
  *
@@ -66,16 +63,6 @@ public abstract class DdsmCloudElementImpl extends MinimalEObjectImpl.Container 
 	 * @ordered
 	 */
 	protected EList<String> propertiesList;
-
-	/**
-	 * The cached value of the '{@link #getResourcesList() <em>Resources List</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getResourcesList()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<DdsmResource> resourcesList;
 
 	/**
 	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
@@ -154,18 +141,6 @@ public abstract class DdsmCloudElementImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DdsmResource> getResourcesList() {
-		if (resourcesList == null) {
-			resourcesList = new EObjectResolvingEList<DdsmResource>(DdsmResource.class, this, DDSMPackage.DDSM_CLOUD_ELEMENT__RESOURCES_LIST);
-		}
-		return resourcesList;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getId() {
 		return id;
 	}
@@ -194,8 +169,6 @@ public abstract class DdsmCloudElementImpl extends MinimalEObjectImpl.Container 
 				return getDescription();
 			case DDSMPackage.DDSM_CLOUD_ELEMENT__PROPERTIES_LIST:
 				return getPropertiesList();
-			case DDSMPackage.DDSM_CLOUD_ELEMENT__RESOURCES_LIST:
-				return getResourcesList();
 			case DDSMPackage.DDSM_CLOUD_ELEMENT__ID:
 				return getId();
 		}
@@ -218,10 +191,6 @@ public abstract class DdsmCloudElementImpl extends MinimalEObjectImpl.Container 
 				getPropertiesList().clear();
 				getPropertiesList().addAll((Collection<? extends String>)newValue);
 				return;
-			case DDSMPackage.DDSM_CLOUD_ELEMENT__RESOURCES_LIST:
-				getResourcesList().clear();
-				getResourcesList().addAll((Collection<? extends DdsmResource>)newValue);
-				return;
 			case DDSMPackage.DDSM_CLOUD_ELEMENT__ID:
 				setId((String)newValue);
 				return;
@@ -243,9 +212,6 @@ public abstract class DdsmCloudElementImpl extends MinimalEObjectImpl.Container 
 			case DDSMPackage.DDSM_CLOUD_ELEMENT__PROPERTIES_LIST:
 				getPropertiesList().clear();
 				return;
-			case DDSMPackage.DDSM_CLOUD_ELEMENT__RESOURCES_LIST:
-				getResourcesList().clear();
-				return;
 			case DDSMPackage.DDSM_CLOUD_ELEMENT__ID:
 				setId(ID_EDEFAULT);
 				return;
@@ -265,8 +231,6 @@ public abstract class DdsmCloudElementImpl extends MinimalEObjectImpl.Container 
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 			case DDSMPackage.DDSM_CLOUD_ELEMENT__PROPERTIES_LIST:
 				return propertiesList != null && !propertiesList.isEmpty();
-			case DDSMPackage.DDSM_CLOUD_ELEMENT__RESOURCES_LIST:
-				return resourcesList != null && !resourcesList.isEmpty();
 			case DDSMPackage.DDSM_CLOUD_ELEMENT__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 		}

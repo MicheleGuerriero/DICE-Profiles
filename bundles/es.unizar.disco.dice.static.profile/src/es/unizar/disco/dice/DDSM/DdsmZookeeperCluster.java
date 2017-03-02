@@ -5,27 +5,23 @@ package es.unizar.disco.dice.DDSM;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Ddsm Zookeeper Server</b></em>'.
+ * A representation of the model object '<em><b>Ddsm Zookeeper Cluster</b></em>'.
  * <!-- end-user-doc -->
- *
- * <!-- begin-model-doc -->
- * self.componentType=DDSMcomponentType::PeerNode
- * <!-- end-model-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getTickTime <em>Tick Time</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getSyncLimit <em>Sync Limit</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getInitLimit <em>Init Limit</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getTickTime <em>Tick Time</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getSyncLimit <em>Sync Limit</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getInitLimit <em>Init Limit</em>}</li>
  * </ul>
  *
- * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperServer()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='ZookeeperServerTypePeefNode'"
+ * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperCluster()
+ * @model
  * @generated
  */
-public interface DdsmZookeeperServer extends DdsmInternalComponent {
+public interface DdsmZookeeperCluster extends DdsmPeerToPeerPlatform {
 	/**
 	 * Returns the value of the '<em><b>Tick Time</b></em>' attribute.
 	 * The default value is <code>"1500"</code>.
@@ -37,14 +33,14 @@ public interface DdsmZookeeperServer extends DdsmInternalComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tick Time</em>' attribute.
 	 * @see #setTickTime(int)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperServer_TickTime()
-	 * @model default="1500" required="true" ordered="false"
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperCluster_TickTime()
+	 * @model default="1500" dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getTickTime();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getTickTime <em>Tick Time</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getTickTime <em>Tick Time</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Tick Time</em>' attribute.
@@ -64,14 +60,14 @@ public interface DdsmZookeeperServer extends DdsmInternalComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sync Limit</em>' attribute.
 	 * @see #setSyncLimit(int)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperServer_SyncLimit()
-	 * @model default="10" required="true" ordered="false"
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperCluster_SyncLimit()
+	 * @model default="10" dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getSyncLimit();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getSyncLimit <em>Sync Limit</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getSyncLimit <em>Sync Limit</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Sync Limit</em>' attribute.
@@ -91,14 +87,14 @@ public interface DdsmZookeeperServer extends DdsmInternalComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Init Limit</em>' attribute.
 	 * @see #setInitLimit(int)
-	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperServer_InitLimit()
-	 * @model default="5" required="true" ordered="false"
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmZookeeperCluster_InitLimit()
+	 * @model default="5" dataType="org.eclipse.uml2.types.Integer" ordered="false"
 	 * @generated
 	 */
 	int getInitLimit();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getInitLimit <em>Init Limit</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getInitLimit <em>Init Limit</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Init Limit</em>' attribute.
@@ -107,4 +103,4 @@ public interface DdsmZookeeperServer extends DdsmInternalComponent {
 	 */
 	void setInitLimit(int value);
 
-} // DdsmZookeeperServer
+} // DdsmZookeeperCluster

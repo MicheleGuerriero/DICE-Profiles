@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>es.unizar.profiles</groupId>
 	<artifactId>es.unizar.profiles.configuration</artifactId>
-	<version>0.10.0-SNAPSHOT</version>
+	<version>0.11.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<tycho.version>0.25.0</tycho.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<neon-repo.url>http://download.eclipse.org/releases/neon</neon-repo.url>
-		<project.version>0.10.0-SNAPSHOT</project.version>
+		<project.version>0.11.0-SNAPSHOT</project.version>
 	</properties>
 
 	<repositories>

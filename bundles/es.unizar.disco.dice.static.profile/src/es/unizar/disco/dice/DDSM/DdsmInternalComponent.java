@@ -18,9 +18,12 @@ import org.eclipse.uml2.uml.Node;
  * </p>
  * <ul>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getRequiredPort <em>Required Port</em>}</li>
- *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isFrontEnd <em>Is Front End</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getIsFrontEnd <em>Is Front End</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getComponentType <em>Component Type</em>}</li>
  *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getBase_Node <em>Base Node</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isProtected <em>Protected</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLaunch_script <em>Launch script</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLanguage <em>Language</em>}</li>
  * </ul>
  *
  * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent()
@@ -54,22 +57,22 @@ public interface DdsmInternalComponent extends DdsmComponent {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Front End</em>' attribute.
-	 * @see #setIsFrontEnd(boolean)
+	 * @see #setIsFrontEnd(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_IsFrontEnd()
-	 * @model default="false" required="true" ordered="false"
+	 * @model default="false" dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
-	boolean isFrontEnd();
+	String getIsFrontEnd();
 
 	/**
-	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isFrontEnd <em>Is Front End</em>}' attribute.
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getIsFrontEnd <em>Is Front End</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Front End</em>' attribute.
-	 * @see #isFrontEnd()
+	 * @see #getIsFrontEnd()
 	 * @generated
 	 */
-	void setIsFrontEnd(boolean value);
+	void setIsFrontEnd(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Component Type</b></em>' attribute.
@@ -84,7 +87,7 @@ public interface DdsmInternalComponent extends DdsmComponent {
 	 * @see es.unizar.disco.dice.Basic_Enumeration_Types.DDSMcomponentType
 	 * @see #setComponentType(DDSMcomponentType)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_ComponentType()
-	 * @model required="true" ordered="false"
+	 * @model ordered="false"
 	 * @generated
 	 */
 	DDSMcomponentType getComponentType();
@@ -125,5 +128,84 @@ public interface DdsmInternalComponent extends DdsmComponent {
 	 * @generated
 	 */
 	void setBase_Node(Node value);
+
+	/**
+	 * Returns the value of the '<em><b>Protected</b></em>' attribute.
+	 * The default value is <code>"false"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Protected</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Protected</em>' attribute.
+	 * @see #setProtected(boolean)
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_Protected()
+	 * @model default="false" dataType="org.eclipse.uml2.types.Boolean" ordered="false"
+	 * @generated
+	 */
+	boolean isProtected();
+
+	/**
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isProtected <em>Protected</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Protected</em>' attribute.
+	 * @see #isProtected()
+	 * @generated
+	 */
+	void setProtected(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Launch script</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Launch script</em>' attribute.
+	 * @see #setLaunch_script(String)
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_Launch_script()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getLaunch_script();
+
+	/**
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLaunch_script <em>Launch script</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Launch script</em>' attribute.
+	 * @see #getLaunch_script()
+	 * @generated
+	 */
+	void setLaunch_script(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Language</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Language</em>' attribute.
+	 * @see #setLanguage(String)
+	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmInternalComponent_Language()
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
+	 * @generated
+	 */
+	String getLanguage();
+
+	/**
+	 * Sets the value of the '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLanguage <em>Language</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Language</em>' attribute.
+	 * @see #getLanguage()
+	 * @generated
+	 */
+	void setLanguage(String value);
 
 } // DdsmInternalComponent

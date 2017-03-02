@@ -84,22 +84,13 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_CLOUD_ELEMENT__PROPERTIES_LIST = 1;
 
 	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_CLOUD_ELEMENT__RESOURCES_LIST = 2;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLOUD_ELEMENT__ID = 3;
+	int DDSM_CLOUD_ELEMENT__ID = 2;
 
 	/**
 	 * The number of structural features of the '<em>Ddsm Cloud Element</em>' class.
@@ -108,7 +99,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLOUD_ELEMENT_FEATURE_COUNT = 4;
+	int DDSM_CLOUD_ELEMENT_FEATURE_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmComponentImpl <em>Ddsm Component</em>}' class.
@@ -137,15 +128,6 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_COMPONENT__PROPERTIES_LIST = DDSM_CLOUD_ELEMENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_COMPONENT__RESOURCES_LIST = DDSM_CLOUD_ELEMENT__RESOURCES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -201,15 +183,6 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_EXTERNAL_COMPONENT__PROPERTIES_LIST = DDSM_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_EXTERNAL_COMPONENT__RESOURCES_LIST = DDSM_COMPONENT__RESOURCES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -302,52 +275,6 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT = DDSM_COMPONENT_FEATURE_COUNT + 7;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmResourceImpl <em>Ddsm Resource</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmResourceImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmResource()
-	 * @generated
-	 */
-	int DDSM_RESOURCE = 3;
-
-	/**
-	 * The feature id for the '<em><b>Commands List</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_RESOURCE__COMMANDS_LIST = 0;
-
-	/**
-	 * The feature id for the '<em><b>Base Artifact</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_RESOURCE__BASE_ARTIFACT = 1;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_RESOURCE__ID = 2;
-
-	/**
-	 * The number of structural features of the '<em>Ddsm Resource</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_RESOURCE_FEATURE_COUNT = 3;
-
-	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmPortImpl <em>Ddsm Port</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -355,7 +282,7 @@ public interface DDSMPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmPort()
 	 * @generated
 	 */
-	int DDSM_PORT = 4;
+	int DDSM_PORT = 3;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -374,15 +301,6 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_PORT__PROPERTIES_LIST = DDSM_CLOUD_ELEMENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_PORT__RESOURCES_LIST = DDSM_CLOUD_ELEMENT__RESOURCES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -437,7 +355,7 @@ public interface DDSMPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmInternalComponent()
 	 * @generated
 	 */
-	int DDSM_INTERNAL_COMPONENT = 5;
+	int DDSM_INTERNAL_COMPONENT = 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -456,15 +374,6 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST = DDSM_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_INTERNAL_COMPONENT__RESOURCES_LIST = DDSM_COMPONENT__RESOURCES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -521,23 +430,50 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_INTERNAL_COMPONENT__BASE_NODE = DDSM_COMPONENT_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__PROTECTED = DDSM_COMPONENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT = DDSM_COMPONENT_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_INTERNAL_COMPONENT__LANGUAGE = DDSM_COMPONENT_FEATURE_COUNT + 6;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Internal Component</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_INTERNAL_COMPONENT_FEATURE_COUNT = DDSM_COMPONENT_FEATURE_COUNT + 4;
+	int DDSM_INTERNAL_COMPONENT_FEATURE_COUNT = DDSM_COMPONENT_FEATURE_COUNT + 7;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmClusterImpl <em>Ddsm Cluster</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl <em>Ddsm Heterogeneous Cluster</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmClusterImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmCluster()
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmHeterogeneousCluster()
 	 * @generated
 	 */
-	int DDSM_CLUSTER = 6;
+	int DDSM_HETEROGENEOUS_CLUSTER = 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -546,7 +482,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__DESCRIPTION = DDSM_EXTERNAL_COMPONENT__DESCRIPTION;
+	int DDSM_HETEROGENEOUS_CLUSTER__DESCRIPTION = DDSM_EXTERNAL_COMPONENT__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
@@ -555,16 +491,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__PROPERTIES_LIST = DDSM_EXTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_CLUSTER__RESOURCES_LIST = DDSM_EXTERNAL_COMPONENT__RESOURCES_LIST;
+	int DDSM_HETEROGENEOUS_CLUSTER__PROPERTIES_LIST = DDSM_EXTERNAL_COMPONENT__PROPERTIES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -573,7 +500,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__ID = DDSM_EXTERNAL_COMPONENT__ID;
+	int DDSM_HETEROGENEOUS_CLUSTER__ID = DDSM_EXTERNAL_COMPONENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
@@ -582,7 +509,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__PROVIDED_PORTS_LIST = DDSM_EXTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+	int DDSM_HETEROGENEOUS_CLUSTER__PROVIDED_PORTS_LIST = DDSM_EXTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
@@ -591,7 +518,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__LOCATION = DDSM_EXTERNAL_COMPONENT__LOCATION;
+	int DDSM_HETEROGENEOUS_CLUSTER__LOCATION = DDSM_EXTERNAL_COMPONENT__LOCATION;
 
 	/**
 	 * The feature id for the '<em><b>Provider</b></em>' attribute.
@@ -600,7 +527,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__PROVIDER = DDSM_EXTERNAL_COMPONENT__PROVIDER;
+	int DDSM_HETEROGENEOUS_CLUSTER__PROVIDER = DDSM_EXTERNAL_COMPONENT__PROVIDER;
 
 	/**
 	 * The feature id for the '<em><b>Service Type</b></em>' attribute.
@@ -609,7 +536,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__SERVICE_TYPE = DDSM_EXTERNAL_COMPONENT__SERVICE_TYPE;
+	int DDSM_HETEROGENEOUS_CLUSTER__SERVICE_TYPE = DDSM_EXTERNAL_COMPONENT__SERVICE_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Region</b></em>' attribute.
@@ -618,7 +545,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__REGION = DDSM_EXTERNAL_COMPONENT__REGION;
+	int DDSM_HETEROGENEOUS_CLUSTER__REGION = DDSM_EXTERNAL_COMPONENT__REGION;
 
 	/**
 	 * The feature id for the '<em><b>Login</b></em>' attribute.
@@ -627,7 +554,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__LOGIN = DDSM_EXTERNAL_COMPONENT__LOGIN;
+	int DDSM_HETEROGENEOUS_CLUSTER__LOGIN = DDSM_EXTERNAL_COMPONENT__LOGIN;
 
 	/**
 	 * The feature id for the '<em><b>Password</b></em>' attribute.
@@ -636,7 +563,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__PASSWORD = DDSM_EXTERNAL_COMPONENT__PASSWORD;
+	int DDSM_HETEROGENEOUS_CLUSTER__PASSWORD = DDSM_EXTERNAL_COMPONENT__PASSWORD;
 
 	/**
 	 * The feature id for the '<em><b>Base Device</b></em>' reference.
@@ -645,7 +572,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__BASE_DEVICE = DDSM_EXTERNAL_COMPONENT__BASE_DEVICE;
+	int DDSM_HETEROGENEOUS_CLUSTER__BASE_DEVICE = DDSM_EXTERNAL_COMPONENT__BASE_DEVICE;
 
 	/**
 	 * The feature id for the '<em><b>Has VM</b></em>' reference list.
@@ -654,26 +581,26 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER__HAS_VM = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 0;
+	int DDSM_HETEROGENEOUS_CLUSTER__HAS_VM = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Ddsm Cluster</em>' class.
+	 * The number of structural features of the '<em>Ddsm Heterogeneous Cluster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_CLUSTER_FEATURE_COUNT = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 1;
+	int DDSM_HETEROGENEOUS_CLUSTER_FEATURE_COUNT = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmVmImpl <em>Ddsm Vm</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl <em>Ddsm VMs Cluster</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmVmImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmVMsCluster()
 	 * @generated
 	 */
-	int DDSM_VM = 7;
+	int DDSM_VMS_CLUSTER = 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -682,7 +609,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__DESCRIPTION = DDSM_EXTERNAL_COMPONENT__DESCRIPTION;
+	int DDSM_VMS_CLUSTER__DESCRIPTION = DDSM_EXTERNAL_COMPONENT__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
@@ -691,16 +618,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__PROPERTIES_LIST = DDSM_EXTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_VM__RESOURCES_LIST = DDSM_EXTERNAL_COMPONENT__RESOURCES_LIST;
+	int DDSM_VMS_CLUSTER__PROPERTIES_LIST = DDSM_EXTERNAL_COMPONENT__PROPERTIES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -709,7 +627,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__ID = DDSM_EXTERNAL_COMPONENT__ID;
+	int DDSM_VMS_CLUSTER__ID = DDSM_EXTERNAL_COMPONENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
@@ -718,7 +636,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__PROVIDED_PORTS_LIST = DDSM_EXTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+	int DDSM_VMS_CLUSTER__PROVIDED_PORTS_LIST = DDSM_EXTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
@@ -727,7 +645,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__LOCATION = DDSM_EXTERNAL_COMPONENT__LOCATION;
+	int DDSM_VMS_CLUSTER__LOCATION = DDSM_EXTERNAL_COMPONENT__LOCATION;
 
 	/**
 	 * The feature id for the '<em><b>Provider</b></em>' attribute.
@@ -736,7 +654,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__PROVIDER = DDSM_EXTERNAL_COMPONENT__PROVIDER;
+	int DDSM_VMS_CLUSTER__PROVIDER = DDSM_EXTERNAL_COMPONENT__PROVIDER;
 
 	/**
 	 * The feature id for the '<em><b>Service Type</b></em>' attribute.
@@ -745,7 +663,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__SERVICE_TYPE = DDSM_EXTERNAL_COMPONENT__SERVICE_TYPE;
+	int DDSM_VMS_CLUSTER__SERVICE_TYPE = DDSM_EXTERNAL_COMPONENT__SERVICE_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Region</b></em>' attribute.
@@ -754,7 +672,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__REGION = DDSM_EXTERNAL_COMPONENT__REGION;
+	int DDSM_VMS_CLUSTER__REGION = DDSM_EXTERNAL_COMPONENT__REGION;
 
 	/**
 	 * The feature id for the '<em><b>Login</b></em>' attribute.
@@ -763,7 +681,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__LOGIN = DDSM_EXTERNAL_COMPONENT__LOGIN;
+	int DDSM_VMS_CLUSTER__LOGIN = DDSM_EXTERNAL_COMPONENT__LOGIN;
 
 	/**
 	 * The feature id for the '<em><b>Password</b></em>' attribute.
@@ -772,7 +690,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__PASSWORD = DDSM_EXTERNAL_COMPONENT__PASSWORD;
+	int DDSM_VMS_CLUSTER__PASSWORD = DDSM_EXTERNAL_COMPONENT__PASSWORD;
 
 	/**
 	 * The feature id for the '<em><b>Base Device</b></em>' reference.
@@ -781,7 +699,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__BASE_DEVICE = DDSM_EXTERNAL_COMPONENT__BASE_DEVICE;
+	int DDSM_VMS_CLUSTER__BASE_DEVICE = DDSM_EXTERNAL_COMPONENT__BASE_DEVICE;
 
 	/**
 	 * The feature id for the '<em><b>Is64os</b></em>' attribute.
@@ -790,7 +708,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__IS64OS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 0;
+	int DDSM_VMS_CLUSTER__IS64OS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Image Id</b></em>' attribute.
@@ -799,7 +717,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__IMAGE_ID = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 1;
+	int DDSM_VMS_CLUSTER__IMAGE_ID = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Max Cores</b></em>' attribute.
@@ -808,7 +726,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__MAX_CORES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 2;
+	int DDSM_VMS_CLUSTER__MAX_CORES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Max Ram</b></em>' attribute.
@@ -817,7 +735,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__MAX_RAM = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 3;
+	int DDSM_VMS_CLUSTER__MAX_RAM = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Max Storage</b></em>' attribute.
@@ -826,7 +744,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__MAX_STORAGE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 4;
+	int DDSM_VMS_CLUSTER__MAX_STORAGE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Min Cores</b></em>' attribute.
@@ -835,7 +753,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__MIN_CORES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 5;
+	int DDSM_VMS_CLUSTER__MIN_CORES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Min Ram</b></em>' attribute.
@@ -844,7 +762,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__MIN_RAM = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 6;
+	int DDSM_VMS_CLUSTER__MIN_RAM = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Min Storage</b></em>' attribute.
@@ -853,7 +771,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__MIN_STORAGE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 7;
+	int DDSM_VMS_CLUSTER__MIN_STORAGE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Os</b></em>' attribute.
@@ -862,7 +780,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__OS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 8;
+	int DDSM_VMS_CLUSTER__OS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Security Group</b></em>' attribute.
@@ -871,7 +789,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__SECURITY_GROUP = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 9;
+	int DDSM_VMS_CLUSTER__SECURITY_GROUP = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Private Key</b></em>' attribute.
@@ -880,7 +798,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__PRIVATE_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 10;
+	int DDSM_VMS_CLUSTER__PRIVATE_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Ssh Key</b></em>' attribute.
@@ -889,7 +807,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__SSH_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 11;
+	int DDSM_VMS_CLUSTER__SSH_KEY = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Public Address</b></em>' attribute.
@@ -898,7 +816,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__PUBLIC_ADDRESS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 12;
+	int DDSM_VMS_CLUSTER__PUBLIC_ADDRESS = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Instances</b></em>' attribute.
@@ -907,7 +825,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__INSTANCES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 13;
+	int DDSM_VMS_CLUSTER__INSTANCES = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Generic Size</b></em>' attribute.
@@ -916,26 +834,26 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM__GENERIC_SIZE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 14;
+	int DDSM_VMS_CLUSTER__GENERIC_SIZE = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 14;
 
 	/**
-	 * The number of structural features of the '<em>Ddsm Vm</em>' class.
+	 * The number of structural features of the '<em>Ddsm VMs Cluster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_VM_FEATURE_COUNT = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 15;
+	int DDSM_VMS_CLUSTER_FEATURE_COUNT = DDSM_EXTERNAL_COMPONENT_FEATURE_COUNT + 15;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmYarnResourceManagerImpl <em>Ddsm Yarn Resource Manager</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMasterSlavePlatformImpl <em>Ddsm Master Slave Platform</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmYarnResourceManagerImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmYarnResourceManager()
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmMasterSlavePlatformImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmMasterSlavePlatform()
 	 * @generated
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER = 8;
+	int DDSM_MASTER_SLAVE_PLATFORM = 8;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -944,7 +862,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
+	int DDSM_MASTER_SLAVE_PLATFORM__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
@@ -953,16 +871,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_YARN_RESOURCE_MANAGER__RESOURCES_LIST = DDSM_INTERNAL_COMPONENT__RESOURCES_LIST;
+	int DDSM_MASTER_SLAVE_PLATFORM__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -971,7 +880,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__ID = DDSM_INTERNAL_COMPONENT__ID;
+	int DDSM_MASTER_SLAVE_PLATFORM__ID = DDSM_INTERNAL_COMPONENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
@@ -980,7 +889,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+	int DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
@@ -989,7 +898,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
+	int DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
@@ -998,7 +907,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
+	int DDSM_MASTER_SLAVE_PLATFORM__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
 
 	/**
 	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
@@ -1007,7 +916,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
+	int DDSM_MASTER_SLAVE_PLATFORM__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Base Node</b></em>' reference.
@@ -1016,26 +925,62 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
+	int DDSM_MASTER_SLAVE_PLATFORM__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
 
 	/**
-	 * The number of structural features of the '<em>Ddsm Yarn Resource Manager</em>' class.
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_YARN_RESOURCE_MANAGER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+	int DDSM_MASTER_SLAVE_PLATFORM__PROTECTED = DDSM_INTERNAL_COMPONENT__PROTECTED;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperServerImpl <em>Ddsm Zookeeper Server</em>}' class.
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmZookeeperServerImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmZookeeperServer()
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__LAUNCH_SCRIPT = DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Master Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Master Slave Platform</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmYarnClusterImpl <em>Ddsm Yarn Cluster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmYarnClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmYarnCluster()
 	 * @generated
 	 */
-	int DDSM_ZOOKEEPER_SERVER = 9;
+	int DDSM_YARN_CLUSTER = 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1044,7 +989,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
+	int DDSM_YARN_CLUSTER__DESCRIPTION = DDSM_MASTER_SLAVE_PLATFORM__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
@@ -1053,16 +998,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_ZOOKEEPER_SERVER__RESOURCES_LIST = DDSM_INTERNAL_COMPONENT__RESOURCES_LIST;
+	int DDSM_YARN_CLUSTER__PROPERTIES_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROPERTIES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1071,7 +1007,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__ID = DDSM_INTERNAL_COMPONENT__ID;
+	int DDSM_YARN_CLUSTER__ID = DDSM_MASTER_SLAVE_PLATFORM__ID;
 
 	/**
 	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
@@ -1080,7 +1016,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+	int DDSM_YARN_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
@@ -1089,7 +1025,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
+	int DDSM_YARN_CLUSTER__REQUIRED_PORT = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
@@ -1098,7 +1034,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
+	int DDSM_YARN_CLUSTER__IS_FRONT_END = DDSM_MASTER_SLAVE_PLATFORM__IS_FRONT_END;
 
 	/**
 	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
@@ -1107,7 +1043,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
+	int DDSM_YARN_CLUSTER__COMPONENT_TYPE = DDSM_MASTER_SLAVE_PLATFORM__COMPONENT_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Base Node</b></em>' reference.
@@ -1116,7 +1052,288 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
+	int DDSM_YARN_CLUSTER__BASE_NODE = DDSM_MASTER_SLAVE_PLATFORM__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__PROTECTED = DDSM_MASTER_SLAVE_PLATFORM__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__LAUNCH_SCRIPT = DDSM_MASTER_SLAVE_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Master Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__MASTER_HOST = DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST;
+
+	/**
+	 * The feature id for the '<em><b>Base Execution Environment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER__BASE_EXECUTION_ENVIRONMENT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Yarn Cluster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_YARN_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmPeerToPeerPlatformImpl <em>Ddsm Peer To Peer Platform</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmPeerToPeerPlatformImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmPeerToPeerPlatform()
+	 * @generated
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM = 10;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__ID = DDSM_INTERNAL_COMPONENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__PROTECTED = DDSM_INTERNAL_COMPONENT__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__LAUNCH_SCRIPT = DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE = DDSM_INTERNAL_COMPONENT__LANGUAGE;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Peer To Peer Platform</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperClusterImpl <em>Ddsm Zookeeper Cluster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmZookeeperClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmZookeeperCluster()
+	 * @generated
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER = 9;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__DESCRIPTION = DDSM_PEER_TO_PEER_PLATFORM__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__PROPERTIES_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__ID = DDSM_PEER_TO_PEER_PLATFORM__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__PROVIDED_PORTS_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__REQUIRED_PORT = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__IS_FRONT_END = DDSM_PEER_TO_PEER_PLATFORM__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__COMPONENT_TYPE = DDSM_PEER_TO_PEER_PLATFORM__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__BASE_NODE = DDSM_PEER_TO_PEER_PLATFORM__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__PROTECTED = DDSM_PEER_TO_PEER_PLATFORM__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__LAUNCH_SCRIPT = DDSM_PEER_TO_PEER_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_ZOOKEEPER_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
 
 	/**
 	 * The feature id for the '<em><b>Tick Time</b></em>' attribute.
@@ -1125,7 +1342,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__TICK_TIME = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+	int DDSM_ZOOKEEPER_CLUSTER__TICK_TIME = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Sync Limit</b></em>' attribute.
@@ -1134,7 +1351,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 1;
+	int DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Init Limit</b></em>' attribute.
@@ -1143,26 +1360,26 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER__INIT_LIMIT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 2;
+	int DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of structural features of the '<em>Ddsm Zookeeper Server</em>' class.
+	 * The number of structural features of the '<em>Ddsm Zookeeper Cluster</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_ZOOKEEPER_SERVER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 3;
+	int DDSM_ZOOKEEPER_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaImpl <em>Ddsm Kafka</em>}' class.
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl <em>Ddsm Kafka Cluster</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmKafkaImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmKafka()
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmKafkaCluster()
 	 * @generated
 	 */
-	int DDSM_KAFKA = 10;
+	int DDSM_KAFKA_CLUSTER = 11;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1171,7 +1388,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
+	int DDSM_KAFKA_CLUSTER__DESCRIPTION = DDSM_PEER_TO_PEER_PLATFORM__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
@@ -1180,16 +1397,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_KAFKA__RESOURCES_LIST = DDSM_INTERNAL_COMPONENT__RESOURCES_LIST;
+	int DDSM_KAFKA_CLUSTER__PROPERTIES_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROPERTIES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1198,7 +1406,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__ID = DDSM_INTERNAL_COMPONENT__ID;
+	int DDSM_KAFKA_CLUSTER__ID = DDSM_PEER_TO_PEER_PLATFORM__ID;
 
 	/**
 	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
@@ -1207,7 +1415,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+	int DDSM_KAFKA_CLUSTER__PROVIDED_PORTS_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
@@ -1216,7 +1424,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
+	int DDSM_KAFKA_CLUSTER__REQUIRED_PORT = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
@@ -1225,7 +1433,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
+	int DDSM_KAFKA_CLUSTER__IS_FRONT_END = DDSM_PEER_TO_PEER_PLATFORM__IS_FRONT_END;
 
 	/**
 	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
@@ -1234,7 +1442,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
+	int DDSM_KAFKA_CLUSTER__COMPONENT_TYPE = DDSM_PEER_TO_PEER_PLATFORM__COMPONENT_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Base Node</b></em>' reference.
@@ -1243,26 +1451,62 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
+	int DDSM_KAFKA_CLUSTER__BASE_NODE = DDSM_PEER_TO_PEER_PLATFORM__BASE_NODE;
 
 	/**
-	 * The number of structural features of the '<em>Ddsm Kafka</em>' class.
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_KAFKA_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+	int DDSM_KAFKA_CLUSTER__PROTECTED = DDSM_PEER_TO_PEER_PLATFORM__PROTECTED;
 
 	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmNimbusImpl <em>Ddsm Nimbus</em>}' class.
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmNimbusImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmNimbus()
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__LAUNCH_SCRIPT = DDSM_PEER_TO_PEER_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Base Execution Environment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER__BASE_EXECUTION_ENVIRONMENT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Kafka Cluster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_KAFKA_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl <em>Ddsm Storm Cluster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmStormCluster()
 	 * @generated
 	 */
-	int DDSM_NIMBUS = 11;
+	int DDSM_STORM_CLUSTER = 12;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1271,7 +1515,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
+	int DDSM_STORM_CLUSTER__DESCRIPTION = DDSM_MASTER_SLAVE_PLATFORM__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
@@ -1280,16 +1524,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_NIMBUS__RESOURCES_LIST = DDSM_INTERNAL_COMPONENT__RESOURCES_LIST;
+	int DDSM_STORM_CLUSTER__PROPERTIES_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROPERTIES_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1298,7 +1533,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__ID = DDSM_INTERNAL_COMPONENT__ID;
+	int DDSM_STORM_CLUSTER__ID = DDSM_MASTER_SLAVE_PLATFORM__ID;
 
 	/**
 	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
@@ -1307,7 +1542,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
+	int DDSM_STORM_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
 
 	/**
 	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
@@ -1316,7 +1551,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
+	int DDSM_STORM_CLUSTER__REQUIRED_PORT = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_PORT;
 
 	/**
 	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
@@ -1325,7 +1560,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
+	int DDSM_STORM_CLUSTER__IS_FRONT_END = DDSM_MASTER_SLAVE_PLATFORM__IS_FRONT_END;
 
 	/**
 	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
@@ -1334,7 +1569,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
+	int DDSM_STORM_CLUSTER__COMPONENT_TYPE = DDSM_MASTER_SLAVE_PLATFORM__COMPONENT_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Base Node</b></em>' reference.
@@ -1343,7 +1578,43 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
+	int DDSM_STORM_CLUSTER__BASE_NODE = DDSM_MASTER_SLAVE_PLATFORM__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__PROTECTED = DDSM_MASTER_SLAVE_PLATFORM__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__LAUNCH_SCRIPT = DDSM_MASTER_SLAVE_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Master Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__MASTER_HOST = DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST;
 
 	/**
 	 * The feature id for the '<em><b>Task Timeout</b></em>' attribute.
@@ -1352,7 +1623,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__TASK_TIMEOUT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+	int DDSM_STORM_CLUSTER__TASK_TIMEOUT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Supervisor Frequency</b></em>' attribute.
@@ -1361,7 +1632,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__SUPERVISOR_FREQUENCY = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 1;
+	int DDSM_STORM_CLUSTER__SUPERVISOR_FREQUENCY = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Queue Size</b></em>' attribute.
@@ -1370,7 +1641,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__QUEUE_SIZE = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 2;
+	int DDSM_STORM_CLUSTER__QUEUE_SIZE = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Monitor Frequency</b></em>' attribute.
@@ -1379,7 +1650,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__MONITOR_FREQUENCY = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 3;
+	int DDSM_STORM_CLUSTER__MONITOR_FREQUENCY = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Retry Times</b></em>' attribute.
@@ -1388,7 +1659,7 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__RETRY_TIMES = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 4;
+	int DDSM_STORM_CLUSTER__RETRY_TIMES = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Retry Interval</b></em>' attribute.
@@ -1397,16 +1668,61 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS__RETRY_INTERVAL = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 5;
+	int DDSM_STORM_CLUSTER__RETRY_INTERVAL = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 5;
 
 	/**
-	 * The number of structural features of the '<em>Ddsm Nimbus</em>' class.
+	 * The feature id for the '<em><b>Worker Start Timeout</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_NIMBUS_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 6;
+	int DDSM_STORM_CLUSTER__WORKER_START_TIMEOUT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Cpu Capacity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__CPU_CAPACITY = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Memory Capacity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__MEMORY_CAPACITY = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Heartbeat Frequency</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__HEARTBEAT_FREQUENCY = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Base Execution Environment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER__BASE_EXECUTION_ENVIRONMENT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 10;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Storm Cluster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_STORM_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobSubmissionImpl <em>Ddsm Job Submission</em>}' class.
@@ -1416,7 +1732,7 @@ public interface DDSMPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmJobSubmission()
 	 * @generated
 	 */
-	int DDSM_JOB_SUBMISSION = 12;
+	int DDSM_JOB_SUBMISSION = 13;
 
 	/**
 	 * The feature id for the '<em><b>Base Deployment</b></em>' reference.
@@ -1428,249 +1744,31 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_JOB_SUBMISSION__BASE_DEPLOYMENT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Number Of Submission</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_JOB_SUBMISSION__NUMBER_OF_SUBMISSION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Interval Between Submission</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_JOB_SUBMISSION__INTERVAL_BETWEEN_SUBMISSION = 2;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Job Submission</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_JOB_SUBMISSION_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmSupervisorImpl <em>Ddsm Supervisor</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmSupervisorImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmSupervisor()
-	 * @generated
-	 */
-	int DDSM_SUPERVISOR = 13;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
-
-	/**
-	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__RESOURCES_LIST = DDSM_INTERNAL_COMPONENT__RESOURCES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__ID = DDSM_INTERNAL_COMPONENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
-
-	/**
-	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
-
-	/**
-	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Base Node</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
-
-	/**
-	 * The feature id for the '<em><b>Worker Start Timeout</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__WORKER_START_TIMEOUT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Cpu Capacity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__CPU_CAPACITY = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Memory Capacity</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__MEMORY_CAPACITY = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Heartbeat Frequency</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR__HEARTBEAT_FREQUENCY = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Ddsm Supervisor</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_SUPERVISOR_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 4;
-
-	/**
-	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl <em>Ddsm Storm Cluster</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl
-	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmStormCluster()
-	 * @generated
-	 */
-	int DDSM_STORM_CLUSTER = 14;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__DESCRIPTION = DDSM_INTERNAL_COMPONENT__DESCRIPTION;
-
-	/**
-	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__PROPERTIES_LIST = DDSM_INTERNAL_COMPONENT__PROPERTIES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Resources List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__RESOURCES_LIST = DDSM_INTERNAL_COMPONENT__RESOURCES_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__ID = DDSM_INTERNAL_COMPONENT__ID;
-
-	/**
-	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__PROVIDED_PORTS_LIST = DDSM_INTERNAL_COMPONENT__PROVIDED_PORTS_LIST;
-
-	/**
-	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__REQUIRED_PORT = DDSM_INTERNAL_COMPONENT__REQUIRED_PORT;
-
-	/**
-	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__IS_FRONT_END = DDSM_INTERNAL_COMPONENT__IS_FRONT_END;
-
-	/**
-	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__COMPONENT_TYPE = DDSM_INTERNAL_COMPONENT__COMPONENT_TYPE;
-
-	/**
-	 * The feature id for the '<em><b>Base Node</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER__BASE_NODE = DDSM_INTERNAL_COMPONENT__BASE_NODE;
-
-	/**
-	 * The number of structural features of the '<em>Ddsm Storm Cluster</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DDSM_STORM_CLUSTER_FEATURE_COUNT = DDSM_INTERNAL_COMPONENT_FEATURE_COUNT + 0;
+	int DDSM_JOB_SUBMISSION_FEATURE_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl <em>Ddsm Big Data Job</em>}' class.
@@ -1680,25 +1778,25 @@ public interface DDSMPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmBigDataJob()
 	 * @generated
 	 */
-	int DDSM_BIG_DATA_JOB = 15;
+	int DDSM_BIG_DATA_JOB = 14;
 
 	/**
-	 * The feature id for the '<em><b>Artifact URL</b></em>' attribute.
+	 * The feature id for the '<em><b>Application</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_BIG_DATA_JOB__ARTIFACT_URL = 0;
+	int DDSM_BIG_DATA_JOB__APPLICATION = 0;
 
 	/**
-	 * The feature id for the '<em><b>Main Class</b></em>' attribute.
+	 * The feature id for the '<em><b>Application class</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_BIG_DATA_JOB__MAIN_CLASS = 1;
+	int DDSM_BIG_DATA_JOB__APPLICATION_CLASS = 1;
 
 	/**
 	 * The feature id for the '<em><b>Base Artifact</b></em>' reference.
@@ -1710,13 +1808,31 @@ public interface DDSMPackage extends EPackage {
 	int DDSM_BIG_DATA_JOB__BASE_ARTIFACT = 2;
 
 	/**
+	 * The feature id for the '<em><b>Application name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_BIG_DATA_JOB__APPLICATION_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_BIG_DATA_JOB__ARGUMENTS = 4;
+
+	/**
 	 * The number of structural features of the '<em>Ddsm Big Data Job</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DDSM_BIG_DATA_JOB_FEATURE_COUNT = 3;
+	int DDSM_BIG_DATA_JOB_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobDeployedFromImpl <em>Ddsm Job Deployed From</em>}' class.
@@ -1726,7 +1842,7 @@ public interface DDSMPackage extends EPackage {
 	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmJobDeployedFrom()
 	 * @generated
 	 */
-	int DDSM_JOB_DEPLOYED_FROM = 16;
+	int DDSM_JOB_DEPLOYED_FROM = 15;
 
 	/**
 	 * The feature id for the '<em><b>Base Dependency</b></em>' reference.
@@ -1745,6 +1861,323 @@ public interface DDSMPackage extends EPackage {
 	 * @ordered
 	 */
 	int DDSM_JOB_DEPLOYED_FROM_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmHdfsClusterImpl <em>Ddsm Hdfs Cluster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmHdfsClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmHdfsCluster()
+	 * @generated
+	 */
+	int DDSM_HDFS_CLUSTER = 16;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__DESCRIPTION = DDSM_MASTER_SLAVE_PLATFORM__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__PROPERTIES_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__ID = DDSM_MASTER_SLAVE_PLATFORM__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__PROVIDED_PORTS_LIST = DDSM_MASTER_SLAVE_PLATFORM__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__REQUIRED_PORT = DDSM_MASTER_SLAVE_PLATFORM__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__IS_FRONT_END = DDSM_MASTER_SLAVE_PLATFORM__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__COMPONENT_TYPE = DDSM_MASTER_SLAVE_PLATFORM__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__BASE_NODE = DDSM_MASTER_SLAVE_PLATFORM__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__PROTECTED = DDSM_MASTER_SLAVE_PLATFORM__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__LAUNCH_SCRIPT = DDSM_MASTER_SLAVE_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__LANGUAGE = DDSM_MASTER_SLAVE_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Master Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER__MASTER_HOST = DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Hdfs Cluster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_HDFS_CLUSTER_FEATURE_COUNT = DDSM_MASTER_SLAVE_PLATFORM_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmCassandraClusterImpl <em>Ddsm Cassandra Cluster</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see es.unizar.disco.dice.DDSM.impl.DdsmCassandraClusterImpl
+	 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmCassandraCluster()
+	 * @generated
+	 */
+	int DDSM_CASSANDRA_CLUSTER = 17;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__DESCRIPTION = DDSM_PEER_TO_PEER_PLATFORM__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Properties List</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__PROPERTIES_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROPERTIES_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__ID = DDSM_PEER_TO_PEER_PLATFORM__ID;
+
+	/**
+	 * The feature id for the '<em><b>Provided Ports List</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__PROVIDED_PORTS_LIST = DDSM_PEER_TO_PEER_PLATFORM__PROVIDED_PORTS_LIST;
+
+	/**
+	 * The feature id for the '<em><b>Required Port</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__REQUIRED_PORT = DDSM_PEER_TO_PEER_PLATFORM__REQUIRED_PORT;
+
+	/**
+	 * The feature id for the '<em><b>Is Front End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__IS_FRONT_END = DDSM_PEER_TO_PEER_PLATFORM__IS_FRONT_END;
+
+	/**
+	 * The feature id for the '<em><b>Component Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__COMPONENT_TYPE = DDSM_PEER_TO_PEER_PLATFORM__COMPONENT_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Base Node</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__BASE_NODE = DDSM_PEER_TO_PEER_PLATFORM__BASE_NODE;
+
+	/**
+	 * The feature id for the '<em><b>Protected</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__PROTECTED = DDSM_PEER_TO_PEER_PLATFORM__PROTECTED;
+
+	/**
+	 * The feature id for the '<em><b>Launch script</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__LAUNCH_SCRIPT = DDSM_PEER_TO_PEER_PLATFORM__LAUNCH_SCRIPT;
+
+	/**
+	 * The feature id for the '<em><b>Language</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__LANGUAGE = DDSM_PEER_TO_PEER_PLATFORM__LANGUAGE;
+
+	/**
+	 * The feature id for the '<em><b>Seed Host</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__SEED_HOST = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Key cache keys to save</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__KEY_CACHE_KEYS_TO_SAVE = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Key cache save period</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__KEY_CACHE_SAVE_PERIOD = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Memtable cleanup threshold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__MEMTABLE_CLEANUP_THRESHOLD = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Memtable flush writers</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__MEMTABLE_FLUSH_WRITERS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Authenticator enabled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__AUTHENTICATOR_ENABLED = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Authorizer enabled</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__AUTHORIZER_ENABLED = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Permission validity in ms</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER__PERMISSION_VALIDITY_IN_MS = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Ddsm Cassandra Cluster</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DDSM_CASSANDRA_CLUSTER_FEATURE_COUNT = DDSM_PEER_TO_PEER_PLATFORM_FEATURE_COUNT + 8;
 
 
 	/**
@@ -1888,17 +2321,6 @@ public interface DDSMPackage extends EPackage {
 	EAttribute getDdsmCloudElement_PropertiesList();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DDSM.DdsmCloudElement#getResourcesList <em>Resources List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Resources List</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmCloudElement#getResourcesList()
-	 * @see #getDdsmCloudElement()
-	 * @generated
-	 */
-	EReference getDdsmCloudElement_ResourcesList();
-
-	/**
 	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCloudElement#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1908,49 +2330,6 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getDdsmCloudElement_Id();
-
-	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmResource <em>Ddsm Resource</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Resource</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmResource
-	 * @generated
-	 */
-	EClass getDdsmResource();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link es.unizar.disco.dice.DDSM.DdsmResource#getCommandsList <em>Commands List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Commands List</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmResource#getCommandsList()
-	 * @see #getDdsmResource()
-	 * @generated
-	 */
-	EReference getDdsmResource_CommandsList();
-
-	/**
-	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmResource#getBase_Artifact <em>Base Artifact</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Base Artifact</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmResource#getBase_Artifact()
-	 * @see #getDdsmResource()
-	 * @generated
-	 */
-	EReference getDdsmResource_Base_Artifact();
-
-	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmResource#getId <em>Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmResource#getId()
-	 * @see #getDdsmResource()
-	 * @generated
-	 */
-	EAttribute getDdsmResource_Id();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmPort <em>Ddsm Port</em>}'.
@@ -2017,11 +2396,11 @@ public interface DDSMPackage extends EPackage {
 	EReference getDdsmInternalComponent_RequiredPort();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isFrontEnd <em>Is Front End</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getIsFrontEnd <em>Is Front End</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Front End</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#isFrontEnd()
+	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#getIsFrontEnd()
 	 * @see #getDdsmInternalComponent()
 	 * @generated
 	 */
@@ -2050,339 +2429,480 @@ public interface DDSMPackage extends EPackage {
 	EReference getDdsmInternalComponent_Base_Node();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmCluster <em>Ddsm Cluster</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#isProtected <em>Protected</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Cluster</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmCluster
+	 * @return the meta object for the attribute '<em>Protected</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#isProtected()
+	 * @see #getDdsmInternalComponent()
 	 * @generated
 	 */
-	EClass getDdsmCluster();
+	EAttribute getDdsmInternalComponent_Protected();
 
 	/**
-	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DDSM.DdsmCluster#getHasVM <em>Has VM</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLaunch_script <em>Launch script</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Launch script</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLaunch_script()
+	 * @see #getDdsmInternalComponent()
+	 * @generated
+	 */
+	EAttribute getDdsmInternalComponent_Launch_script();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLanguage <em>Language</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Language</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmInternalComponent#getLanguage()
+	 * @see #getDdsmInternalComponent()
+	 * @generated
+	 */
+	EAttribute getDdsmInternalComponent_Language();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster <em>Ddsm Heterogeneous Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Heterogeneous Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster
+	 * @generated
+	 */
+	EClass getDdsmHeterogeneousCluster();
+
+	/**
+	 * Returns the meta object for the reference list '{@link es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster#getHasVM <em>Has VM</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Has VM</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmCluster#getHasVM()
-	 * @see #getDdsmCluster()
+	 * @see es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster#getHasVM()
+	 * @see #getDdsmHeterogeneousCluster()
 	 * @generated
 	 */
-	EReference getDdsmCluster_HasVM();
+	EReference getDdsmHeterogeneousCluster_HasVM();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmVm <em>Ddsm Vm</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster <em>Ddsm VMs Cluster</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Vm</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm
+	 * @return the meta object for class '<em>Ddsm VMs Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster
 	 * @generated
 	 */
-	EClass getDdsmVm();
+	EClass getDdsmVMsCluster();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#isIs64os <em>Is64os</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#isIs64os <em>Is64os</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is64os</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#isIs64os()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#isIs64os()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_Is64os();
+	EAttribute getDdsmVMsCluster_Is64os();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getImageId <em>Image Id</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getImageId <em>Image Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Image Id</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getImageId()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getImageId()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_ImageId();
+	EAttribute getDdsmVMsCluster_ImageId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getMaxCores <em>Max Cores</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMaxCores <em>Max Cores</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Cores</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getMaxCores()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMaxCores()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_MaxCores();
+	EAttribute getDdsmVMsCluster_MaxCores();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getMaxRam <em>Max Ram</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMaxRam <em>Max Ram</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Ram</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getMaxRam()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMaxRam()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_MaxRam();
+	EAttribute getDdsmVMsCluster_MaxRam();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getMaxStorage <em>Max Storage</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMaxStorage <em>Max Storage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Max Storage</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getMaxStorage()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMaxStorage()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_MaxStorage();
+	EAttribute getDdsmVMsCluster_MaxStorage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getMinCores <em>Min Cores</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinCores <em>Min Cores</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Min Cores</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getMinCores()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinCores()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_MinCores();
+	EAttribute getDdsmVMsCluster_MinCores();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getMinRam <em>Min Ram</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinRam <em>Min Ram</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Min Ram</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getMinRam()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinRam()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_MinRam();
+	EAttribute getDdsmVMsCluster_MinRam();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getMinStorage <em>Min Storage</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinStorage <em>Min Storage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Min Storage</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getMinStorage()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getMinStorage()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_MinStorage();
+	EAttribute getDdsmVMsCluster_MinStorage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getOs <em>Os</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getOs <em>Os</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Os</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getOs()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getOs()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_Os();
+	EAttribute getDdsmVMsCluster_Os();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getSecurityGroup <em>Security Group</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSecurityGroup <em>Security Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Security Group</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getSecurityGroup()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSecurityGroup()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_SecurityGroup();
+	EAttribute getDdsmVMsCluster_SecurityGroup();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getPrivateKey <em>Private Key</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getPrivateKey <em>Private Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Private Key</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getPrivateKey()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getPrivateKey()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_PrivateKey();
+	EAttribute getDdsmVMsCluster_PrivateKey();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getSshKey <em>Ssh Key</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSshKey <em>Ssh Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Ssh Key</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getSshKey()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getSshKey()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_SshKey();
+	EAttribute getDdsmVMsCluster_SshKey();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getPublicAddress <em>Public Address</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getPublicAddress <em>Public Address</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Public Address</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getPublicAddress()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getPublicAddress()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_PublicAddress();
+	EAttribute getDdsmVMsCluster_PublicAddress();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getInstances <em>Instances</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getInstances <em>Instances</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Instances</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getInstances()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getInstances()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_Instances();
+	EAttribute getDdsmVMsCluster_Instances();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVm#getGenericSize <em>Generic Size</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmVMsCluster#getGenericSize <em>Generic Size</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Generic Size</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmVm#getGenericSize()
-	 * @see #getDdsmVm()
+	 * @see es.unizar.disco.dice.DDSM.DdsmVMsCluster#getGenericSize()
+	 * @see #getDdsmVMsCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmVm_GenericSize();
+	EAttribute getDdsmVMsCluster_GenericSize();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmYarnResourceManager <em>Ddsm Yarn Resource Manager</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster <em>Ddsm Yarn Cluster</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Yarn Resource Manager</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmYarnResourceManager
+	 * @return the meta object for class '<em>Ddsm Yarn Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster
 	 * @generated
 	 */
-	EClass getDdsmYarnResourceManager();
+	EClass getDdsmYarnCluster();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer <em>Ddsm Zookeeper Server</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmYarnCluster#getBase_ExecutionEnvironment <em>Base Execution Environment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Zookeeper Server</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperServer
+	 * @return the meta object for the reference '<em>Base Execution Environment</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmYarnCluster#getBase_ExecutionEnvironment()
+	 * @see #getDdsmYarnCluster()
 	 * @generated
 	 */
-	EClass getDdsmZookeeperServer();
+	EReference getDdsmYarnCluster_Base_ExecutionEnvironment();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getTickTime <em>Tick Time</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform <em>Ddsm Master Slave Platform</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Master Slave Platform</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform
+	 * @generated
+	 */
+	EClass getDdsmMasterSlavePlatform();
+
+	/**
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform#getMasterHost <em>Master Host</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Master Host</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmMasterSlavePlatform#getMasterHost()
+	 * @see #getDdsmMasterSlavePlatform()
+	 * @generated
+	 */
+	EReference getDdsmMasterSlavePlatform_MasterHost();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster <em>Ddsm Zookeeper Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Zookeeper Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperCluster
+	 * @generated
+	 */
+	EClass getDdsmZookeeperCluster();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getTickTime <em>Tick Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Tick Time</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getTickTime()
-	 * @see #getDdsmZookeeperServer()
+	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getTickTime()
+	 * @see #getDdsmZookeeperCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmZookeeperServer_TickTime();
+	EAttribute getDdsmZookeeperCluster_TickTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getSyncLimit <em>Sync Limit</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getSyncLimit <em>Sync Limit</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Sync Limit</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getSyncLimit()
-	 * @see #getDdsmZookeeperServer()
+	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getSyncLimit()
+	 * @see #getDdsmZookeeperCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmZookeeperServer_SyncLimit();
+	EAttribute getDdsmZookeeperCluster_SyncLimit();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getInitLimit <em>Init Limit</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getInitLimit <em>Init Limit</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Init Limit</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperServer#getInitLimit()
-	 * @see #getDdsmZookeeperServer()
+	 * @see es.unizar.disco.dice.DDSM.DdsmZookeeperCluster#getInitLimit()
+	 * @see #getDdsmZookeeperCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmZookeeperServer_InitLimit();
+	EAttribute getDdsmZookeeperCluster_InitLimit();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmKafka <em>Ddsm Kafka</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmPeerToPeerPlatform <em>Ddsm Peer To Peer Platform</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Kafka</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmKafka
+	 * @return the meta object for class '<em>Ddsm Peer To Peer Platform</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmPeerToPeerPlatform
 	 * @generated
 	 */
-	EClass getDdsmKafka();
+	EClass getDdsmPeerToPeerPlatform();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmNimbus <em>Ddsm Nimbus</em>}'.
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster <em>Ddsm Kafka Cluster</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Nimbus</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmNimbus
+	 * @return the meta object for class '<em>Ddsm Kafka Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster
 	 * @generated
 	 */
-	EClass getDdsmNimbus();
+	EClass getDdsmKafkaCluster();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmNimbus#getTaskTimeout <em>Task Timeout</em>}'.
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getBase_ExecutionEnvironment <em>Base Execution Environment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Execution Environment</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmKafkaCluster#getBase_ExecutionEnvironment()
+	 * @see #getDdsmKafkaCluster()
+	 * @generated
+	 */
+	EReference getDdsmKafkaCluster_Base_ExecutionEnvironment();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster <em>Ddsm Storm Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Storm Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster
+	 * @generated
+	 */
+	EClass getDdsmStormCluster();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getTaskTimeout <em>Task Timeout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Task Timeout</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmNimbus#getTaskTimeout()
-	 * @see #getDdsmNimbus()
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getTaskTimeout()
+	 * @see #getDdsmStormCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmNimbus_TaskTimeout();
+	EAttribute getDdsmStormCluster_TaskTimeout();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmNimbus#getSupervisorFrequency <em>Supervisor Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getSupervisorFrequency <em>Supervisor Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Supervisor Frequency</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmNimbus#getSupervisorFrequency()
-	 * @see #getDdsmNimbus()
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getSupervisorFrequency()
+	 * @see #getDdsmStormCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmNimbus_SupervisorFrequency();
+	EAttribute getDdsmStormCluster_SupervisorFrequency();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmNimbus#getQueueSize <em>Queue Size</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getQueueSize <em>Queue Size</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Queue Size</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmNimbus#getQueueSize()
-	 * @see #getDdsmNimbus()
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getQueueSize()
+	 * @see #getDdsmStormCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmNimbus_QueueSize();
+	EAttribute getDdsmStormCluster_QueueSize();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmNimbus#getMonitorFrequency <em>Monitor Frequency</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getMonitorFrequency <em>Monitor Frequency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Monitor Frequency</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmNimbus#getMonitorFrequency()
-	 * @see #getDdsmNimbus()
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getMonitorFrequency()
+	 * @see #getDdsmStormCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmNimbus_MonitorFrequency();
+	EAttribute getDdsmStormCluster_MonitorFrequency();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmNimbus#getRetryTimes <em>Retry Times</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getRetryTimes <em>Retry Times</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Retry Times</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmNimbus#getRetryTimes()
-	 * @see #getDdsmNimbus()
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getRetryTimes()
+	 * @see #getDdsmStormCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmNimbus_RetryTimes();
+	EAttribute getDdsmStormCluster_RetryTimes();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmNimbus#getRetryInterval <em>Retry Interval</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getRetryInterval <em>Retry Interval</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Retry Interval</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmNimbus#getRetryInterval()
-	 * @see #getDdsmNimbus()
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getRetryInterval()
+	 * @see #getDdsmStormCluster()
 	 * @generated
 	 */
-	EAttribute getDdsmNimbus_RetryInterval();
+	EAttribute getDdsmStormCluster_RetryInterval();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getWorkerStartTimeout <em>Worker Start Timeout</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Worker Start Timeout</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getWorkerStartTimeout()
+	 * @see #getDdsmStormCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmStormCluster_WorkerStartTimeout();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getCpuCapacity <em>Cpu Capacity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cpu Capacity</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getCpuCapacity()
+	 * @see #getDdsmStormCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmStormCluster_CpuCapacity();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getMemoryCapacity <em>Memory Capacity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Memory Capacity</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getMemoryCapacity()
+	 * @see #getDdsmStormCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmStormCluster_MemoryCapacity();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getHeartbeatFrequency <em>Heartbeat Frequency</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Heartbeat Frequency</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getHeartbeatFrequency()
+	 * @see #getDdsmStormCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmStormCluster_HeartbeatFrequency();
+
+	/**
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster#getBase_ExecutionEnvironment <em>Base Execution Environment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Execution Environment</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster#getBase_ExecutionEnvironment()
+	 * @see #getDdsmStormCluster()
+	 * @generated
+	 */
+	EReference getDdsmStormCluster_Base_ExecutionEnvironment();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission <em>Ddsm Job Submission</em>}'.
@@ -2406,68 +2926,26 @@ public interface DDSMPackage extends EPackage {
 	EReference getDdsmJobSubmission_Base_Deployment();
 
 	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmSupervisor <em>Ddsm Supervisor</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getNumberOfSubmission <em>Number Of Submission</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Supervisor</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmSupervisor
+	 * @return the meta object for the attribute '<em>Number Of Submission</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobSubmission#getNumberOfSubmission()
+	 * @see #getDdsmJobSubmission()
 	 * @generated
 	 */
-	EClass getDdsmSupervisor();
+	EAttribute getDdsmJobSubmission_NumberOfSubmission();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSupervisor#getWorkerStartTimeout <em>Worker Start Timeout</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmJobSubmission#getIntervalBetweenSubmission <em>Interval Between Submission</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Worker Start Timeout</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmSupervisor#getWorkerStartTimeout()
-	 * @see #getDdsmSupervisor()
+	 * @return the meta object for the attribute '<em>Interval Between Submission</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmJobSubmission#getIntervalBetweenSubmission()
+	 * @see #getDdsmJobSubmission()
 	 * @generated
 	 */
-	EAttribute getDdsmSupervisor_WorkerStartTimeout();
-
-	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSupervisor#getCpuCapacity <em>Cpu Capacity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Cpu Capacity</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmSupervisor#getCpuCapacity()
-	 * @see #getDdsmSupervisor()
-	 * @generated
-	 */
-	EAttribute getDdsmSupervisor_CpuCapacity();
-
-	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSupervisor#getMemoryCapacity <em>Memory Capacity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Memory Capacity</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmSupervisor#getMemoryCapacity()
-	 * @see #getDdsmSupervisor()
-	 * @generated
-	 */
-	EAttribute getDdsmSupervisor_MemoryCapacity();
-
-	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmSupervisor#getHeartbeatFrequency <em>Heartbeat Frequency</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Heartbeat Frequency</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmSupervisor#getHeartbeatFrequency()
-	 * @see #getDdsmSupervisor()
-	 * @generated
-	 */
-	EAttribute getDdsmSupervisor_HeartbeatFrequency();
-
-	/**
-	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmStormCluster <em>Ddsm Storm Cluster</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ddsm Storm Cluster</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmStormCluster
-	 * @generated
-	 */
-	EClass getDdsmStormCluster();
+	EAttribute getDdsmJobSubmission_IntervalBetweenSubmission();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob <em>Ddsm Big Data Job</em>}'.
@@ -2480,26 +2958,26 @@ public interface DDSMPackage extends EPackage {
 	EClass getDdsmBigDataJob();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArtifactURL <em>Artifact URL</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getApplication <em>Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Artifact URL</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArtifactURL()
+	 * @return the meta object for the attribute '<em>Application</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getApplication()
 	 * @see #getDdsmBigDataJob()
 	 * @generated
 	 */
-	EAttribute getDdsmBigDataJob_ArtifactURL();
+	EAttribute getDdsmBigDataJob_Application();
 
 	/**
-	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getMainClass <em>Main Class</em>}'.
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getApplication_class <em>Application class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Main Class</em>'.
-	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getMainClass()
+	 * @return the meta object for the attribute '<em>Application class</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getApplication_class()
 	 * @see #getDdsmBigDataJob()
 	 * @generated
 	 */
-	EAttribute getDdsmBigDataJob_MainClass();
+	EAttribute getDdsmBigDataJob_Application_class();
 
 	/**
 	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getBase_Artifact <em>Base Artifact</em>}'.
@@ -2511,6 +2989,28 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDdsmBigDataJob_Base_Artifact();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getApplication_name <em>Application name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Application name</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getApplication_name()
+	 * @see #getDdsmBigDataJob()
+	 * @generated
+	 */
+	EAttribute getDdsmBigDataJob_Application_name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArguments <em>Arguments</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Arguments</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmBigDataJob#getArguments()
+	 * @see #getDdsmBigDataJob()
+	 * @generated
+	 */
+	EAttribute getDdsmBigDataJob_Arguments();
 
 	/**
 	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmJobDeployedFrom <em>Ddsm Job Deployed From</em>}'.
@@ -2532,6 +3032,114 @@ public interface DDSMPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getDdsmJobDeployedFrom_Base_Dependency();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmHdfsCluster <em>Ddsm Hdfs Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Hdfs Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmHdfsCluster
+	 * @generated
+	 */
+	EClass getDdsmHdfsCluster();
+
+	/**
+	 * Returns the meta object for class '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster <em>Ddsm Cassandra Cluster</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ddsm Cassandra Cluster</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster
+	 * @generated
+	 */
+	EClass getDdsmCassandraCluster();
+
+	/**
+	 * Returns the meta object for the reference '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getSeedHost <em>Seed Host</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Seed Host</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getSeedHost()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EReference getDdsmCassandraCluster_SeedHost();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getKey_cache_keys_to_save <em>Key cache keys to save</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Key cache keys to save</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getKey_cache_keys_to_save()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmCassandraCluster_Key_cache_keys_to_save();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getKey_cache_save_period <em>Key cache save period</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Key cache save period</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getKey_cache_save_period()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmCassandraCluster_Key_cache_save_period();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getMemtable_cleanup_threshold <em>Memtable cleanup threshold</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Memtable cleanup threshold</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getMemtable_cleanup_threshold()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmCassandraCluster_Memtable_cleanup_threshold();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getMemtable_flush_writers <em>Memtable flush writers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Memtable flush writers</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getMemtable_flush_writers()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmCassandraCluster_Memtable_flush_writers();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#isAuthenticator_enabled <em>Authenticator enabled</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Authenticator enabled</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#isAuthenticator_enabled()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmCassandraCluster_Authenticator_enabled();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#isAuthorizer_enabled <em>Authorizer enabled</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Authorizer enabled</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#isAuthorizer_enabled()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmCassandraCluster_Authorizer_enabled();
+
+	/**
+	 * Returns the meta object for the attribute '{@link es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getPermission_validity_in_ms <em>Permission validity in ms</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Permission validity in ms</em>'.
+	 * @see es.unizar.disco.dice.DDSM.DdsmCassandraCluster#getPermission_validity_in_ms()
+	 * @see #getDdsmCassandraCluster()
+	 * @generated
+	 */
+	EAttribute getDdsmCassandraCluster_Permission_validity_in_ms();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2666,54 +3274,12 @@ public interface DDSMPackage extends EPackage {
 		EAttribute DDSM_CLOUD_ELEMENT__PROPERTIES_LIST = eINSTANCE.getDdsmCloudElement_PropertiesList();
 
 		/**
-		 * The meta object literal for the '<em><b>Resources List</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DDSM_CLOUD_ELEMENT__RESOURCES_LIST = eINSTANCE.getDdsmCloudElement_ResourcesList();
-
-		/**
 		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute DDSM_CLOUD_ELEMENT__ID = eINSTANCE.getDdsmCloudElement_Id();
-
-		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmResourceImpl <em>Ddsm Resource</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmResourceImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmResource()
-		 * @generated
-		 */
-		EClass DDSM_RESOURCE = eINSTANCE.getDdsmResource();
-
-		/**
-		 * The meta object literal for the '<em><b>Commands List</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DDSM_RESOURCE__COMMANDS_LIST = eINSTANCE.getDdsmResource_CommandsList();
-
-		/**
-		 * The meta object literal for the '<em><b>Base Artifact</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DDSM_RESOURCE__BASE_ARTIFACT = eINSTANCE.getDdsmResource_Base_Artifact();
-
-		/**
-		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DDSM_RESOURCE__ID = eINSTANCE.getDdsmResource_Id();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmPortImpl <em>Ddsm Port</em>}' class.
@@ -2792,14 +3358,38 @@ public interface DDSMPackage extends EPackage {
 		EReference DDSM_INTERNAL_COMPONENT__BASE_NODE = eINSTANCE.getDdsmInternalComponent_Base_Node();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmClusterImpl <em>Ddsm Cluster</em>}' class.
+		 * The meta object literal for the '<em><b>Protected</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmClusterImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmCluster()
 		 * @generated
 		 */
-		EClass DDSM_CLUSTER = eINSTANCE.getDdsmCluster();
+		EAttribute DDSM_INTERNAL_COMPONENT__PROTECTED = eINSTANCE.getDdsmInternalComponent_Protected();
+
+		/**
+		 * The meta object literal for the '<em><b>Launch script</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_INTERNAL_COMPONENT__LAUNCH_SCRIPT = eINSTANCE.getDdsmInternalComponent_Launch_script();
+
+		/**
+		 * The meta object literal for the '<em><b>Language</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_INTERNAL_COMPONENT__LANGUAGE = eINSTANCE.getDdsmInternalComponent_Language();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl <em>Ddsm Heterogeneous Cluster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmHeterogeneousCluster()
+		 * @generated
+		 */
+		EClass DDSM_HETEROGENEOUS_CLUSTER = eINSTANCE.getDdsmHeterogeneousCluster();
 
 		/**
 		 * The meta object literal for the '<em><b>Has VM</b></em>' reference list feature.
@@ -2807,17 +3397,17 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DDSM_CLUSTER__HAS_VM = eINSTANCE.getDdsmCluster_HasVM();
+		EReference DDSM_HETEROGENEOUS_CLUSTER__HAS_VM = eINSTANCE.getDdsmHeterogeneousCluster_HasVM();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmVmImpl <em>Ddsm Vm</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl <em>Ddsm VMs Cluster</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmVmImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmVm()
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmVMsClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmVMsCluster()
 		 * @generated
 		 */
-		EClass DDSM_VM = eINSTANCE.getDdsmVm();
+		EClass DDSM_VMS_CLUSTER = eINSTANCE.getDdsmVMsCluster();
 
 		/**
 		 * The meta object literal for the '<em><b>Is64os</b></em>' attribute feature.
@@ -2825,7 +3415,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__IS64OS = eINSTANCE.getDdsmVm_Is64os();
+		EAttribute DDSM_VMS_CLUSTER__IS64OS = eINSTANCE.getDdsmVMsCluster_Is64os();
 
 		/**
 		 * The meta object literal for the '<em><b>Image Id</b></em>' attribute feature.
@@ -2833,7 +3423,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__IMAGE_ID = eINSTANCE.getDdsmVm_ImageId();
+		EAttribute DDSM_VMS_CLUSTER__IMAGE_ID = eINSTANCE.getDdsmVMsCluster_ImageId();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Cores</b></em>' attribute feature.
@@ -2841,7 +3431,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__MAX_CORES = eINSTANCE.getDdsmVm_MaxCores();
+		EAttribute DDSM_VMS_CLUSTER__MAX_CORES = eINSTANCE.getDdsmVMsCluster_MaxCores();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Ram</b></em>' attribute feature.
@@ -2849,7 +3439,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__MAX_RAM = eINSTANCE.getDdsmVm_MaxRam();
+		EAttribute DDSM_VMS_CLUSTER__MAX_RAM = eINSTANCE.getDdsmVMsCluster_MaxRam();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Storage</b></em>' attribute feature.
@@ -2857,7 +3447,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__MAX_STORAGE = eINSTANCE.getDdsmVm_MaxStorage();
+		EAttribute DDSM_VMS_CLUSTER__MAX_STORAGE = eINSTANCE.getDdsmVMsCluster_MaxStorage();
 
 		/**
 		 * The meta object literal for the '<em><b>Min Cores</b></em>' attribute feature.
@@ -2865,7 +3455,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__MIN_CORES = eINSTANCE.getDdsmVm_MinCores();
+		EAttribute DDSM_VMS_CLUSTER__MIN_CORES = eINSTANCE.getDdsmVMsCluster_MinCores();
 
 		/**
 		 * The meta object literal for the '<em><b>Min Ram</b></em>' attribute feature.
@@ -2873,7 +3463,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__MIN_RAM = eINSTANCE.getDdsmVm_MinRam();
+		EAttribute DDSM_VMS_CLUSTER__MIN_RAM = eINSTANCE.getDdsmVMsCluster_MinRam();
 
 		/**
 		 * The meta object literal for the '<em><b>Min Storage</b></em>' attribute feature.
@@ -2881,7 +3471,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__MIN_STORAGE = eINSTANCE.getDdsmVm_MinStorage();
+		EAttribute DDSM_VMS_CLUSTER__MIN_STORAGE = eINSTANCE.getDdsmVMsCluster_MinStorage();
 
 		/**
 		 * The meta object literal for the '<em><b>Os</b></em>' attribute feature.
@@ -2889,7 +3479,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__OS = eINSTANCE.getDdsmVm_Os();
+		EAttribute DDSM_VMS_CLUSTER__OS = eINSTANCE.getDdsmVMsCluster_Os();
 
 		/**
 		 * The meta object literal for the '<em><b>Security Group</b></em>' attribute feature.
@@ -2897,7 +3487,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__SECURITY_GROUP = eINSTANCE.getDdsmVm_SecurityGroup();
+		EAttribute DDSM_VMS_CLUSTER__SECURITY_GROUP = eINSTANCE.getDdsmVMsCluster_SecurityGroup();
 
 		/**
 		 * The meta object literal for the '<em><b>Private Key</b></em>' attribute feature.
@@ -2905,7 +3495,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__PRIVATE_KEY = eINSTANCE.getDdsmVm_PrivateKey();
+		EAttribute DDSM_VMS_CLUSTER__PRIVATE_KEY = eINSTANCE.getDdsmVMsCluster_PrivateKey();
 
 		/**
 		 * The meta object literal for the '<em><b>Ssh Key</b></em>' attribute feature.
@@ -2913,7 +3503,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__SSH_KEY = eINSTANCE.getDdsmVm_SshKey();
+		EAttribute DDSM_VMS_CLUSTER__SSH_KEY = eINSTANCE.getDdsmVMsCluster_SshKey();
 
 		/**
 		 * The meta object literal for the '<em><b>Public Address</b></em>' attribute feature.
@@ -2921,7 +3511,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__PUBLIC_ADDRESS = eINSTANCE.getDdsmVm_PublicAddress();
+		EAttribute DDSM_VMS_CLUSTER__PUBLIC_ADDRESS = eINSTANCE.getDdsmVMsCluster_PublicAddress();
 
 		/**
 		 * The meta object literal for the '<em><b>Instances</b></em>' attribute feature.
@@ -2929,7 +3519,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__INSTANCES = eINSTANCE.getDdsmVm_Instances();
+		EAttribute DDSM_VMS_CLUSTER__INSTANCES = eINSTANCE.getDdsmVMsCluster_Instances();
 
 		/**
 		 * The meta object literal for the '<em><b>Generic Size</b></em>' attribute feature.
@@ -2937,27 +3527,53 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_VM__GENERIC_SIZE = eINSTANCE.getDdsmVm_GenericSize();
+		EAttribute DDSM_VMS_CLUSTER__GENERIC_SIZE = eINSTANCE.getDdsmVMsCluster_GenericSize();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmYarnResourceManagerImpl <em>Ddsm Yarn Resource Manager</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmYarnClusterImpl <em>Ddsm Yarn Cluster</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmYarnResourceManagerImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmYarnResourceManager()
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmYarnClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmYarnCluster()
 		 * @generated
 		 */
-		EClass DDSM_YARN_RESOURCE_MANAGER = eINSTANCE.getDdsmYarnResourceManager();
+		EClass DDSM_YARN_CLUSTER = eINSTANCE.getDdsmYarnCluster();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperServerImpl <em>Ddsm Zookeeper Server</em>}' class.
+		 * The meta object literal for the '<em><b>Base Execution Environment</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmZookeeperServerImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmZookeeperServer()
 		 * @generated
 		 */
-		EClass DDSM_ZOOKEEPER_SERVER = eINSTANCE.getDdsmZookeeperServer();
+		EReference DDSM_YARN_CLUSTER__BASE_EXECUTION_ENVIRONMENT = eINSTANCE.getDdsmYarnCluster_Base_ExecutionEnvironment();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmMasterSlavePlatformImpl <em>Ddsm Master Slave Platform</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmMasterSlavePlatformImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmMasterSlavePlatform()
+		 * @generated
+		 */
+		EClass DDSM_MASTER_SLAVE_PLATFORM = eINSTANCE.getDdsmMasterSlavePlatform();
+
+		/**
+		 * The meta object literal for the '<em><b>Master Host</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_MASTER_SLAVE_PLATFORM__MASTER_HOST = eINSTANCE.getDdsmMasterSlavePlatform_MasterHost();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmZookeeperClusterImpl <em>Ddsm Zookeeper Cluster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmZookeeperClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmZookeeperCluster()
+		 * @generated
+		 */
+		EClass DDSM_ZOOKEEPER_CLUSTER = eINSTANCE.getDdsmZookeeperCluster();
 
 		/**
 		 * The meta object literal for the '<em><b>Tick Time</b></em>' attribute feature.
@@ -2965,7 +3581,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_ZOOKEEPER_SERVER__TICK_TIME = eINSTANCE.getDdsmZookeeperServer_TickTime();
+		EAttribute DDSM_ZOOKEEPER_CLUSTER__TICK_TIME = eINSTANCE.getDdsmZookeeperCluster_TickTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Sync Limit</b></em>' attribute feature.
@@ -2973,7 +3589,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_ZOOKEEPER_SERVER__SYNC_LIMIT = eINSTANCE.getDdsmZookeeperServer_SyncLimit();
+		EAttribute DDSM_ZOOKEEPER_CLUSTER__SYNC_LIMIT = eINSTANCE.getDdsmZookeeperCluster_SyncLimit();
 
 		/**
 		 * The meta object literal for the '<em><b>Init Limit</b></em>' attribute feature.
@@ -2981,27 +3597,45 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_ZOOKEEPER_SERVER__INIT_LIMIT = eINSTANCE.getDdsmZookeeperServer_InitLimit();
+		EAttribute DDSM_ZOOKEEPER_CLUSTER__INIT_LIMIT = eINSTANCE.getDdsmZookeeperCluster_InitLimit();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaImpl <em>Ddsm Kafka</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmPeerToPeerPlatformImpl <em>Ddsm Peer To Peer Platform</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmKafkaImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmKafka()
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmPeerToPeerPlatformImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmPeerToPeerPlatform()
 		 * @generated
 		 */
-		EClass DDSM_KAFKA = eINSTANCE.getDdsmKafka();
+		EClass DDSM_PEER_TO_PEER_PLATFORM = eINSTANCE.getDdsmPeerToPeerPlatform();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmNimbusImpl <em>Ddsm Nimbus</em>}' class.
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl <em>Ddsm Kafka Cluster</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmNimbusImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmNimbus()
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmKafkaClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmKafkaCluster()
 		 * @generated
 		 */
-		EClass DDSM_NIMBUS = eINSTANCE.getDdsmNimbus();
+		EClass DDSM_KAFKA_CLUSTER = eINSTANCE.getDdsmKafkaCluster();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Execution Environment</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_KAFKA_CLUSTER__BASE_EXECUTION_ENVIRONMENT = eINSTANCE.getDdsmKafkaCluster_Base_ExecutionEnvironment();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl <em>Ddsm Storm Cluster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmStormCluster()
+		 * @generated
+		 */
+		EClass DDSM_STORM_CLUSTER = eINSTANCE.getDdsmStormCluster();
 
 		/**
 		 * The meta object literal for the '<em><b>Task Timeout</b></em>' attribute feature.
@@ -3009,7 +3643,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_NIMBUS__TASK_TIMEOUT = eINSTANCE.getDdsmNimbus_TaskTimeout();
+		EAttribute DDSM_STORM_CLUSTER__TASK_TIMEOUT = eINSTANCE.getDdsmStormCluster_TaskTimeout();
 
 		/**
 		 * The meta object literal for the '<em><b>Supervisor Frequency</b></em>' attribute feature.
@@ -3017,7 +3651,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_NIMBUS__SUPERVISOR_FREQUENCY = eINSTANCE.getDdsmNimbus_SupervisorFrequency();
+		EAttribute DDSM_STORM_CLUSTER__SUPERVISOR_FREQUENCY = eINSTANCE.getDdsmStormCluster_SupervisorFrequency();
 
 		/**
 		 * The meta object literal for the '<em><b>Queue Size</b></em>' attribute feature.
@@ -3025,7 +3659,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_NIMBUS__QUEUE_SIZE = eINSTANCE.getDdsmNimbus_QueueSize();
+		EAttribute DDSM_STORM_CLUSTER__QUEUE_SIZE = eINSTANCE.getDdsmStormCluster_QueueSize();
 
 		/**
 		 * The meta object literal for the '<em><b>Monitor Frequency</b></em>' attribute feature.
@@ -3033,7 +3667,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_NIMBUS__MONITOR_FREQUENCY = eINSTANCE.getDdsmNimbus_MonitorFrequency();
+		EAttribute DDSM_STORM_CLUSTER__MONITOR_FREQUENCY = eINSTANCE.getDdsmStormCluster_MonitorFrequency();
 
 		/**
 		 * The meta object literal for the '<em><b>Retry Times</b></em>' attribute feature.
@@ -3041,7 +3675,7 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_NIMBUS__RETRY_TIMES = eINSTANCE.getDdsmNimbus_RetryTimes();
+		EAttribute DDSM_STORM_CLUSTER__RETRY_TIMES = eINSTANCE.getDdsmStormCluster_RetryTimes();
 
 		/**
 		 * The meta object literal for the '<em><b>Retry Interval</b></em>' attribute feature.
@@ -3049,7 +3683,47 @@ public interface DDSMPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_NIMBUS__RETRY_INTERVAL = eINSTANCE.getDdsmNimbus_RetryInterval();
+		EAttribute DDSM_STORM_CLUSTER__RETRY_INTERVAL = eINSTANCE.getDdsmStormCluster_RetryInterval();
+
+		/**
+		 * The meta object literal for the '<em><b>Worker Start Timeout</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_STORM_CLUSTER__WORKER_START_TIMEOUT = eINSTANCE.getDdsmStormCluster_WorkerStartTimeout();
+
+		/**
+		 * The meta object literal for the '<em><b>Cpu Capacity</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_STORM_CLUSTER__CPU_CAPACITY = eINSTANCE.getDdsmStormCluster_CpuCapacity();
+
+		/**
+		 * The meta object literal for the '<em><b>Memory Capacity</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_STORM_CLUSTER__MEMORY_CAPACITY = eINSTANCE.getDdsmStormCluster_MemoryCapacity();
+
+		/**
+		 * The meta object literal for the '<em><b>Heartbeat Frequency</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_STORM_CLUSTER__HEARTBEAT_FREQUENCY = eINSTANCE.getDdsmStormCluster_HeartbeatFrequency();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Execution Environment</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_STORM_CLUSTER__BASE_EXECUTION_ENVIRONMENT = eINSTANCE.getDdsmStormCluster_Base_ExecutionEnvironment();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobSubmissionImpl <em>Ddsm Job Submission</em>}' class.
@@ -3070,56 +3744,20 @@ public interface DDSMPackage extends EPackage {
 		EReference DDSM_JOB_SUBMISSION__BASE_DEPLOYMENT = eINSTANCE.getDdsmJobSubmission_Base_Deployment();
 
 		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmSupervisorImpl <em>Ddsm Supervisor</em>}' class.
+		 * The meta object literal for the '<em><b>Number Of Submission</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmSupervisorImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmSupervisor()
 		 * @generated
 		 */
-		EClass DDSM_SUPERVISOR = eINSTANCE.getDdsmSupervisor();
+		EAttribute DDSM_JOB_SUBMISSION__NUMBER_OF_SUBMISSION = eINSTANCE.getDdsmJobSubmission_NumberOfSubmission();
 
 		/**
-		 * The meta object literal for the '<em><b>Worker Start Timeout</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Interval Between Submission</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_SUPERVISOR__WORKER_START_TIMEOUT = eINSTANCE.getDdsmSupervisor_WorkerStartTimeout();
-
-		/**
-		 * The meta object literal for the '<em><b>Cpu Capacity</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DDSM_SUPERVISOR__CPU_CAPACITY = eINSTANCE.getDdsmSupervisor_CpuCapacity();
-
-		/**
-		 * The meta object literal for the '<em><b>Memory Capacity</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DDSM_SUPERVISOR__MEMORY_CAPACITY = eINSTANCE.getDdsmSupervisor_MemoryCapacity();
-
-		/**
-		 * The meta object literal for the '<em><b>Heartbeat Frequency</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DDSM_SUPERVISOR__HEARTBEAT_FREQUENCY = eINSTANCE.getDdsmSupervisor_HeartbeatFrequency();
-
-		/**
-		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl <em>Ddsm Storm Cluster</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see es.unizar.disco.dice.DDSM.impl.DdsmStormClusterImpl
-		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmStormCluster()
-		 * @generated
-		 */
-		EClass DDSM_STORM_CLUSTER = eINSTANCE.getDdsmStormCluster();
+		EAttribute DDSM_JOB_SUBMISSION__INTERVAL_BETWEEN_SUBMISSION = eINSTANCE.getDdsmJobSubmission_IntervalBetweenSubmission();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmBigDataJobImpl <em>Ddsm Big Data Job</em>}' class.
@@ -3132,20 +3770,20 @@ public interface DDSMPackage extends EPackage {
 		EClass DDSM_BIG_DATA_JOB = eINSTANCE.getDdsmBigDataJob();
 
 		/**
-		 * The meta object literal for the '<em><b>Artifact URL</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Application</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_BIG_DATA_JOB__ARTIFACT_URL = eINSTANCE.getDdsmBigDataJob_ArtifactURL();
+		EAttribute DDSM_BIG_DATA_JOB__APPLICATION = eINSTANCE.getDdsmBigDataJob_Application();
 
 		/**
-		 * The meta object literal for the '<em><b>Main Class</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Application class</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DDSM_BIG_DATA_JOB__MAIN_CLASS = eINSTANCE.getDdsmBigDataJob_MainClass();
+		EAttribute DDSM_BIG_DATA_JOB__APPLICATION_CLASS = eINSTANCE.getDdsmBigDataJob_Application_class();
 
 		/**
 		 * The meta object literal for the '<em><b>Base Artifact</b></em>' reference feature.
@@ -3154,6 +3792,22 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DDSM_BIG_DATA_JOB__BASE_ARTIFACT = eINSTANCE.getDdsmBigDataJob_Base_Artifact();
+
+		/**
+		 * The meta object literal for the '<em><b>Application name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_BIG_DATA_JOB__APPLICATION_NAME = eINSTANCE.getDdsmBigDataJob_Application_name();
+
+		/**
+		 * The meta object literal for the '<em><b>Arguments</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_BIG_DATA_JOB__ARGUMENTS = eINSTANCE.getDdsmBigDataJob_Arguments();
 
 		/**
 		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmJobDeployedFromImpl <em>Ddsm Job Deployed From</em>}' class.
@@ -3172,6 +3826,90 @@ public interface DDSMPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DDSM_JOB_DEPLOYED_FROM__BASE_DEPENDENCY = eINSTANCE.getDdsmJobDeployedFrom_Base_Dependency();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmHdfsClusterImpl <em>Ddsm Hdfs Cluster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmHdfsClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmHdfsCluster()
+		 * @generated
+		 */
+		EClass DDSM_HDFS_CLUSTER = eINSTANCE.getDdsmHdfsCluster();
+
+		/**
+		 * The meta object literal for the '{@link es.unizar.disco.dice.DDSM.impl.DdsmCassandraClusterImpl <em>Ddsm Cassandra Cluster</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see es.unizar.disco.dice.DDSM.impl.DdsmCassandraClusterImpl
+		 * @see es.unizar.disco.dice.DDSM.impl.DDSMPackageImpl#getDdsmCassandraCluster()
+		 * @generated
+		 */
+		EClass DDSM_CASSANDRA_CLUSTER = eINSTANCE.getDdsmCassandraCluster();
+
+		/**
+		 * The meta object literal for the '<em><b>Seed Host</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DDSM_CASSANDRA_CLUSTER__SEED_HOST = eINSTANCE.getDdsmCassandraCluster_SeedHost();
+
+		/**
+		 * The meta object literal for the '<em><b>Key cache keys to save</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_CASSANDRA_CLUSTER__KEY_CACHE_KEYS_TO_SAVE = eINSTANCE.getDdsmCassandraCluster_Key_cache_keys_to_save();
+
+		/**
+		 * The meta object literal for the '<em><b>Key cache save period</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_CASSANDRA_CLUSTER__KEY_CACHE_SAVE_PERIOD = eINSTANCE.getDdsmCassandraCluster_Key_cache_save_period();
+
+		/**
+		 * The meta object literal for the '<em><b>Memtable cleanup threshold</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_CASSANDRA_CLUSTER__MEMTABLE_CLEANUP_THRESHOLD = eINSTANCE.getDdsmCassandraCluster_Memtable_cleanup_threshold();
+
+		/**
+		 * The meta object literal for the '<em><b>Memtable flush writers</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_CASSANDRA_CLUSTER__MEMTABLE_FLUSH_WRITERS = eINSTANCE.getDdsmCassandraCluster_Memtable_flush_writers();
+
+		/**
+		 * The meta object literal for the '<em><b>Authenticator enabled</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_CASSANDRA_CLUSTER__AUTHENTICATOR_ENABLED = eINSTANCE.getDdsmCassandraCluster_Authenticator_enabled();
+
+		/**
+		 * The meta object literal for the '<em><b>Authorizer enabled</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_CASSANDRA_CLUSTER__AUTHORIZER_ENABLED = eINSTANCE.getDdsmCassandraCluster_Authorizer_enabled();
+
+		/**
+		 * The meta object literal for the '<em><b>Permission validity in ms</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DDSM_CASSANDRA_CLUSTER__PERMISSION_VALIDITY_IN_MS = eINSTANCE.getDdsmCassandraCluster_Permission_validity_in_ms();
 
 	}
 

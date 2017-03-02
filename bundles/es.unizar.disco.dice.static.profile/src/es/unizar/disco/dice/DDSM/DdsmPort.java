@@ -35,7 +35,7 @@ public interface DdsmPort extends DdsmCloudElement {
 	 * @return the value of the '<em>Is Local</em>' attribute.
 	 * @see #setIsLocal(boolean)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmPort_IsLocal()
-	 * @model default="false" ordered="false"
+	 * @model default="false" dataType="org.eclipse.uml2.types.Boolean" ordered="false"
 	 * @generated
 	 */
 	boolean isLocal();
@@ -61,7 +61,7 @@ public interface DdsmPort extends DdsmCloudElement {
 	 * @return the value of the '<em>Port Number</em>' attribute.
 	 * @see #setPortNumber(String)
 	 * @see es.unizar.disco.dice.DDSM.DDSMPackage#getDdsmPort_PortNumber()
-	 * @model ordered="false"
+	 * @model dataType="org.eclipse.uml2.types.String" ordered="false"
 	 * @generated
 	 */
 	String getPortNumber();

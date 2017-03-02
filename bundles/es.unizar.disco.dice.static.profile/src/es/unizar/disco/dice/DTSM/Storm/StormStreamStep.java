@@ -5,6 +5,7 @@ package es.unizar.disco.dice.DTSM.Storm;
 import es.unizar.disco.dice.Basic_Enumeration_Types.StreamPolicy;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.papyrus.MARTE.MARTE_AnalysisModel.GQAM.GaStep;
 
 /**
@@ -86,7 +87,7 @@ public interface StormStreamStep extends GaStep {
 	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Prob Fields</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Prob Fields</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

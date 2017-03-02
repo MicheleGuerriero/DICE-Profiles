@@ -64,7 +64,7 @@ public class DdsmExternalComponentImpl extends DdsmComponentImpl implements Ddsm
 	 * @generated
 	 * @ordered
 	 */
-	protected static final ProviderType PROVIDER_EDEFAULT = ProviderType.FLEXIANT;
+	protected static final ProviderType PROVIDER_EDEFAULT = ProviderType.FCO;
 
 	/**
 	 * The cached value of the '{@link #getProvider() <em>Provider</em>}' attribute.

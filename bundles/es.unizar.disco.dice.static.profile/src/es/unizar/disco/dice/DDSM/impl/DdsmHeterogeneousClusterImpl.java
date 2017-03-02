@@ -3,8 +3,8 @@
 package es.unizar.disco.dice.DDSM.impl;
 
 import es.unizar.disco.dice.DDSM.DDSMPackage;
-import es.unizar.disco.dice.DDSM.DdsmCluster;
-import es.unizar.disco.dice.DDSM.DdsmVm;
+import es.unizar.disco.dice.DDSM.DdsmHeterogeneousCluster;
+import es.unizar.disco.dice.DDSM.DdsmVMsCluster;
 
 import java.util.Collection;
 
@@ -16,18 +16,18 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Ddsm Cluster</b></em>'.
+ * An implementation of the model object '<em><b>Ddsm Heterogeneous Cluster</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmClusterImpl#getHasVM <em>Has VM</em>}</li>
+ *   <li>{@link es.unizar.disco.dice.DDSM.impl.DdsmHeterogeneousClusterImpl#getHasVM <em>Has VM</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCluster {
+public class DdsmHeterogeneousClusterImpl extends DdsmExternalComponentImpl implements DdsmHeterogeneousCluster {
 	/**
 	 * The cached value of the '{@link #getHasVM() <em>Has VM</em>}' reference list.
 	 * <!-- begin-user-doc -->
@@ -36,14 +36,14 @@ public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCl
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<DdsmVm> hasVM;
+	protected EList<DdsmVMsCluster> hasVM;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DdsmClusterImpl() {
+	protected DdsmHeterogeneousClusterImpl() {
 		super();
 	}
 
@@ -54,7 +54,7 @@ public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return DDSMPackage.Literals.DDSM_CLUSTER;
+		return DDSMPackage.Literals.DDSM_HETEROGENEOUS_CLUSTER;
 	}
 
 	/**
@@ -62,9 +62,9 @@ public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<DdsmVm> getHasVM() {
+	public EList<DdsmVMsCluster> getHasVM() {
 		if (hasVM == null) {
-			hasVM = new EObjectResolvingEList<DdsmVm>(DdsmVm.class, this, DDSMPackage.DDSM_CLUSTER__HAS_VM);
+			hasVM = new EObjectResolvingEList<DdsmVMsCluster>(DdsmVMsCluster.class, this, DDSMPackage.DDSM_HETEROGENEOUS_CLUSTER__HAS_VM);
 		}
 		return hasVM;
 	}
@@ -77,7 +77,7 @@ public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCl
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_CLUSTER__HAS_VM:
+			case DDSMPackage.DDSM_HETEROGENEOUS_CLUSTER__HAS_VM:
 				return getHasVM();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -92,9 +92,9 @@ public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCl
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_CLUSTER__HAS_VM:
+			case DDSMPackage.DDSM_HETEROGENEOUS_CLUSTER__HAS_VM:
 				getHasVM().clear();
-				getHasVM().addAll((Collection<? extends DdsmVm>)newValue);
+				getHasVM().addAll((Collection<? extends DdsmVMsCluster>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -108,7 +108,7 @@ public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCl
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_CLUSTER__HAS_VM:
+			case DDSMPackage.DDSM_HETEROGENEOUS_CLUSTER__HAS_VM:
 				getHasVM().clear();
 				return;
 		}
@@ -123,10 +123,10 @@ public class DdsmClusterImpl extends DdsmExternalComponentImpl implements DdsmCl
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case DDSMPackage.DDSM_CLUSTER__HAS_VM:
+			case DDSMPackage.DDSM_HETEROGENEOUS_CLUSTER__HAS_VM:
 				return hasVM != null && !hasVM.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //DdsmClusterImpl
+} //DdsmHeterogeneousClusterImpl

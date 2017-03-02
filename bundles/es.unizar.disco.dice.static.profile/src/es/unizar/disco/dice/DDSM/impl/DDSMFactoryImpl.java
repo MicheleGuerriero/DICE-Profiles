@@ -57,20 +57,21 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case DDSMPackage.DDSM_EXTERNAL_COMPONENT: return createDdsmExternalComponent();
-			case DDSMPackage.DDSM_RESOURCE: return createDdsmResource();
 			case DDSMPackage.DDSM_PORT: return createDdsmPort();
 			case DDSMPackage.DDSM_INTERNAL_COMPONENT: return createDdsmInternalComponent();
-			case DDSMPackage.DDSM_CLUSTER: return createDdsmCluster();
-			case DDSMPackage.DDSM_VM: return createDdsmVm();
-			case DDSMPackage.DDSM_YARN_RESOURCE_MANAGER: return createDdsmYarnResourceManager();
-			case DDSMPackage.DDSM_ZOOKEEPER_SERVER: return createDdsmZookeeperServer();
-			case DDSMPackage.DDSM_KAFKA: return createDdsmKafka();
-			case DDSMPackage.DDSM_NIMBUS: return createDdsmNimbus();
-			case DDSMPackage.DDSM_JOB_SUBMISSION: return createDdsmJobSubmission();
-			case DDSMPackage.DDSM_SUPERVISOR: return createDdsmSupervisor();
+			case DDSMPackage.DDSM_HETEROGENEOUS_CLUSTER: return createDdsmHeterogeneousCluster();
+			case DDSMPackage.DDSM_VMS_CLUSTER: return createDdsmVMsCluster();
+			case DDSMPackage.DDSM_YARN_CLUSTER: return createDdsmYarnCluster();
+			case DDSMPackage.DDSM_MASTER_SLAVE_PLATFORM: return createDdsmMasterSlavePlatform();
+			case DDSMPackage.DDSM_ZOOKEEPER_CLUSTER: return createDdsmZookeeperCluster();
+			case DDSMPackage.DDSM_PEER_TO_PEER_PLATFORM: return createDdsmPeerToPeerPlatform();
+			case DDSMPackage.DDSM_KAFKA_CLUSTER: return createDdsmKafkaCluster();
 			case DDSMPackage.DDSM_STORM_CLUSTER: return createDdsmStormCluster();
+			case DDSMPackage.DDSM_JOB_SUBMISSION: return createDdsmJobSubmission();
 			case DDSMPackage.DDSM_BIG_DATA_JOB: return createDdsmBigDataJob();
 			case DDSMPackage.DDSM_JOB_DEPLOYED_FROM: return createDdsmJobDeployedFrom();
+			case DDSMPackage.DDSM_HDFS_CLUSTER: return createDdsmHdfsCluster();
+			case DDSMPackage.DDSM_CASSANDRA_CLUSTER: return createDdsmCassandraCluster();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -84,16 +85,6 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	public DdsmExternalComponent createDdsmExternalComponent() {
 		DdsmExternalComponentImpl ddsmExternalComponent = new DdsmExternalComponentImpl();
 		return ddsmExternalComponent;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DdsmResource createDdsmResource() {
-		DdsmResourceImpl ddsmResource = new DdsmResourceImpl();
-		return ddsmResource;
 	}
 
 	/**
@@ -121,9 +112,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DdsmCluster createDdsmCluster() {
-		DdsmClusterImpl ddsmCluster = new DdsmClusterImpl();
-		return ddsmCluster;
+	public DdsmHeterogeneousCluster createDdsmHeterogeneousCluster() {
+		DdsmHeterogeneousClusterImpl ddsmHeterogeneousCluster = new DdsmHeterogeneousClusterImpl();
+		return ddsmHeterogeneousCluster;
 	}
 
 	/**
@@ -131,9 +122,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DdsmVm createDdsmVm() {
-		DdsmVmImpl ddsmVm = new DdsmVmImpl();
-		return ddsmVm;
+	public DdsmVMsCluster createDdsmVMsCluster() {
+		DdsmVMsClusterImpl ddsmVMsCluster = new DdsmVMsClusterImpl();
+		return ddsmVMsCluster;
 	}
 
 	/**
@@ -141,9 +132,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DdsmYarnResourceManager createDdsmYarnResourceManager() {
-		DdsmYarnResourceManagerImpl ddsmYarnResourceManager = new DdsmYarnResourceManagerImpl();
-		return ddsmYarnResourceManager;
+	public DdsmYarnCluster createDdsmYarnCluster() {
+		DdsmYarnClusterImpl ddsmYarnCluster = new DdsmYarnClusterImpl();
+		return ddsmYarnCluster;
 	}
 
 	/**
@@ -151,9 +142,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DdsmZookeeperServer createDdsmZookeeperServer() {
-		DdsmZookeeperServerImpl ddsmZookeeperServer = new DdsmZookeeperServerImpl();
-		return ddsmZookeeperServer;
+	public DdsmMasterSlavePlatform createDdsmMasterSlavePlatform() {
+		DdsmMasterSlavePlatformImpl ddsmMasterSlavePlatform = new DdsmMasterSlavePlatformImpl();
+		return ddsmMasterSlavePlatform;
 	}
 
 	/**
@@ -161,9 +152,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DdsmKafka createDdsmKafka() {
-		DdsmKafkaImpl ddsmKafka = new DdsmKafkaImpl();
-		return ddsmKafka;
+	public DdsmZookeeperCluster createDdsmZookeeperCluster() {
+		DdsmZookeeperClusterImpl ddsmZookeeperCluster = new DdsmZookeeperClusterImpl();
+		return ddsmZookeeperCluster;
 	}
 
 	/**
@@ -171,9 +162,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DdsmNimbus createDdsmNimbus() {
-		DdsmNimbusImpl ddsmNimbus = new DdsmNimbusImpl();
-		return ddsmNimbus;
+	public DdsmPeerToPeerPlatform createDdsmPeerToPeerPlatform() {
+		DdsmPeerToPeerPlatformImpl ddsmPeerToPeerPlatform = new DdsmPeerToPeerPlatformImpl();
+		return ddsmPeerToPeerPlatform;
 	}
 
 	/**
@@ -181,19 +172,9 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DdsmJobSubmission createDdsmJobSubmission() {
-		DdsmJobSubmissionImpl ddsmJobSubmission = new DdsmJobSubmissionImpl();
-		return ddsmJobSubmission;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DdsmSupervisor createDdsmSupervisor() {
-		DdsmSupervisorImpl ddsmSupervisor = new DdsmSupervisorImpl();
-		return ddsmSupervisor;
+	public DdsmKafkaCluster createDdsmKafkaCluster() {
+		DdsmKafkaClusterImpl ddsmKafkaCluster = new DdsmKafkaClusterImpl();
+		return ddsmKafkaCluster;
 	}
 
 	/**
@@ -204,6 +185,16 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	public DdsmStormCluster createDdsmStormCluster() {
 		DdsmStormClusterImpl ddsmStormCluster = new DdsmStormClusterImpl();
 		return ddsmStormCluster;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DdsmJobSubmission createDdsmJobSubmission() {
+		DdsmJobSubmissionImpl ddsmJobSubmission = new DdsmJobSubmissionImpl();
+		return ddsmJobSubmission;
 	}
 
 	/**
@@ -224,6 +215,26 @@ public class DDSMFactoryImpl extends EFactoryImpl implements DDSMFactory {
 	public DdsmJobDeployedFrom createDdsmJobDeployedFrom() {
 		DdsmJobDeployedFromImpl ddsmJobDeployedFrom = new DdsmJobDeployedFromImpl();
 		return ddsmJobDeployedFrom;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DdsmHdfsCluster createDdsmHdfsCluster() {
+		DdsmHdfsClusterImpl ddsmHdfsCluster = new DdsmHdfsClusterImpl();
+		return ddsmHdfsCluster;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DdsmCassandraCluster createDdsmCassandraCluster() {
+		DdsmCassandraClusterImpl ddsmCassandraCluster = new DdsmCassandraClusterImpl();
+		return ddsmCassandraCluster;
 	}
 
 	/**
